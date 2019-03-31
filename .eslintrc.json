@@ -3,6 +3,7 @@
   "rules": {
     "react/no-unescaped-entities": "off",
     "react/jsx-one-expression-per-line": "off",
+    "react/destructuring-assignment": "off",
     "react/prop-types": [1, { "skipUndeclared": true }],
     "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
     "jsx-a11y/accessible-emoji": "off",

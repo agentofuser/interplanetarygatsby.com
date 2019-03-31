@@ -62,6 +62,7 @@
     "develop": "gatsby develop",
     "format": "npx prettier --write ./**/*.{js,json,md,mdx,html,css}",
     "start": "npm run develop",
+    "debug-start": "npx ndb npm run start",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },

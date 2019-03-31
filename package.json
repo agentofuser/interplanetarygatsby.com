@@ -60,7 +60,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
+    "format": "npx prettier --write ./**/*.{js,json,md,mdx,html,css}",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
@@ -71,7 +71,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,json,md,html,css}": [
+    "*.{js,json,md,mdx,html,css}": [
       "prettier --write",
       "git add"
     ],

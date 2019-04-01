@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '__GATSBY_IPFS_PATH_PREFIX__',
   siteMetadata: {
     title: 'Interplanetary Gatsby',
     author: '@agentofuser',
@@ -9,6 +10,7 @@ module.exports = {
     },
   },
   plugins: [
+    'gatsby-plugin-ipfs',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -118,7 +120,7 @@ module.exports = {
         icon: 'content/assets/gatsby-icon.png',
       },
     },
-    'gatsby-plugin-offline',
+    // 'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-typography',

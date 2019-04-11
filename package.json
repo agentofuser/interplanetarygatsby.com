@@ -69,7 +69,7 @@
     "build": "rm -rf .cache/ public/ && gatsby build --prefix-paths",
     "develop": "gatsby develop",
     "format": "npx prettier --write ./**/*.{js,json,md,mdx,html,css}",
-    "start": "npm run develop",
+    "start": "yarn develop",
     "debug-start": "npx ndb npm run start",
     "serve": "gatsby serve",
     "deploy": "node ./ipfs-deploy.js",

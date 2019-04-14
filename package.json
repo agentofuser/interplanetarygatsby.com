@@ -53,6 +53,7 @@
     "ndb": "^1.0.44",
     "ora": "^3.2.0",
     "prettier": "^1.16.4",
+    "semantic-git-commit-cli": "^3.2.2",
     "which": "^1.3.1"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
@@ -73,6 +74,7 @@
     "debug-start": "npx ndb npm run start",
     "serve": "gatsby serve",
     "deploy": "ipfs-deploy -O -p infura -p pinata -d cloudflare",
+    "commit": "npx sgc",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "husky": {

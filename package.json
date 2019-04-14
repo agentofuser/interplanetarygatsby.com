@@ -72,7 +72,7 @@
     "start": "yarn develop",
     "debug-start": "npx ndb npm run start",
     "serve": "gatsby serve",
-    "deploy": "node ./ipfs-deploy.js",
+    "deploy": "ipfs-deploy -O -p infura -p pinata -d cloudflare",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "husky": {

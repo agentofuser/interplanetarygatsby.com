@@ -69,12 +69,12 @@
   "scripts": {
     "build": "rm -rf .cache/ public/ && gatsby build --prefix-paths",
     "develop": "gatsby develop",
-    "format": "npx prettier --write ./**/*.{js,json,md,mdx,html,css}",
+    "format": "prettier --write ./**/*.{js,json,md,mdx,html,css}",
     "start": "yarn develop",
-    "debug-start": "npx ndb npm run start",
+    "debug-start": "ndb npm run start",
     "serve": "gatsby serve",
     "deploy": "ipfs-deploy -O -p infura -p pinata -d cloudflare",
-    "commit": "npx sgc",
+    "commit": "sgc",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "husky": {

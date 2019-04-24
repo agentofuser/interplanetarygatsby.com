@@ -91,5 +91,9 @@
       "eslint --fix",
       "git add"
     ]
+  },
+  "sgc": {
+    "lowercaseTypes": true,
+    "scope": true
   }
 }

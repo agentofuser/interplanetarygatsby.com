@@ -35,6 +35,7 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
+    "@agentofuser/ipfs-deploy": "^7.0.1",
     "@pinata/sdk": "^1.0.16",
     "clipboardy": "^1.2.3",
     "dnslink-cloudflare": "^2.0.1",

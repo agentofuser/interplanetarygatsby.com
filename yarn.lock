@@ -2,6 +2,32 @@
 # yarn lockfile v1
 
 
+"@agentofuser/ipfs-deploy@^7.0.1":
+  version "7.0.1"
+  resolved "http://localhost:4873/@agentofuser%2fipfs-deploy/-/ipfs-deploy-7.0.1.tgz#68ebb79e72e38d2cb5de1f56a2667e2bbb0d4aba"
+  integrity sha512-nLc2un/zc03R5Uqq0TsaxLAqgKv7gg4T0hk4cOvL/EIv1F576S54JFWY1nRWvF6t2Pz2ZKbXoxQk7SebCX1qIg==
+  dependencies:
+    "@pinata/sdk" "^1.0.18"
+    byte-size "^5.0.1"
+    chalk "^2.4.2"
+    clipboardy "^2.0.0"
+    common-tags "^1.8.0"
+    dnslink-cloudflare "^2.0.1"
+    dotenv "^7.0.0"
+    got "^9.6.0"
+    ipaddr.js "^1.9.0"
+    ipfs "^0.35.0"
+    json-stringify-safe "^5.0.1"
+    jsonify-error "^1.4.4"
+    lodash "^4.17.11"
+    multiaddr "^6.0.6"
+    neat-frame "https://github.com/agentofuser/neat-frame#wrap-ansi-options"
+    open "^6.1.0"
+    ora "^3.4.0"
+    public-ip "^3.0.0"
+    trammel "^2.1.0"
+    yargs "^13.2.2"
+
 "@babel/code-frame@^7.0.0":
   version "7.0.0"
   resolved "http://localhost:4873/@babel%2fcode-frame/-/code-frame-7.0.0.tgz#06e2ab19bdb535385559aabb5ba59729482800f8"
@@ -823,6 +849,15 @@
     form-data "^2.3.3"
     is-ipfs "^0.6.0"
 
+"@pinata/sdk@^1.0.18":
+  version "1.0.18"
+  resolved "http://localhost:4873/@pinata%2fsdk/-/sdk-1.0.18.tgz#926f9748ddf81a7ef9c9e04dad1885467a710008"
+  integrity sha512-HGTMdArTGCF8eOInSbb/zDG4IX5HeFhUrRMrlPbRiCKtXU8v3IrumhgSMU5exju/4XvOKd0rBg2j/S5zzowEig==
+  dependencies:
+    axios "^0.18.0"
+    form-data "^2.3.3"
+    is-ipfs "^0.6.0"
+
 "@reach/router@^1.1.1":
   version "1.2.1"
   resolved "http://localhost:4873/@reach%2frouter/-/router-1.2.1.tgz#34ae3541a5ac44fa7796e5506a5d7274a162be4e"
@@ -841,6 +876,11 @@
   dependencies:
     any-observable "^0.3.0"
 
+"@sindresorhus/is@^0.14.0":
+  version "0.14.0"
+  resolved "http://localhost:4873/@sindresorhus%2fis/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
+  integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
+
 "@sindresorhus/is@^0.7.0":
   version "0.7.0"
   resolved "http://localhost:4873/@sindresorhus%2fis/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
@@ -850,6 +890,13 @@
   version "1.5.6-b"
   resolved "http://localhost:4873/@stefanprobst%2flokijs/-/lokijs-1.5.6-b.tgz#6a36a86dbe132e702e6b15ffd3ce4139aebfe942"
   integrity sha512-MNodHp46og+Sdde/LCxTLrxcD5Dimu21R/Fer2raXMG1XtHSV2+vZnkIV87OPAxuf2NiDj1W5hN7Q2MYUfQQ8w==
+
+"@szmarczak/http-timer@^1.1.2":
+  version "1.1.2"
+  resolved "http://localhost:4873/@szmarczak%2fhttp-timer/-/http-timer-1.1.2.tgz#b1665e2c461a2cd92f4c1bbf50d5454de0d4b421"
+  integrity sha512-XIB2XbzHTN6ieIjfIMV9hlVcfPU26s2vafYWQcZHWXHOxiaRZYEDKEwdl129Zyg50+foYV2jCgtrqSA6qNuNSA==
+  dependencies:
+    defer-to-connect "^1.0.1"
 
 "@types/configstore@^2.1.1":
   version "2.1.1"
@@ -1094,6 +1141,13 @@ abbrev@1:
   resolved "http://localhost:4873/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
   integrity sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==
 
+abort-controller@^3.0.0:
+  version "3.0.0"
+  resolved "http://localhost:4873/abort-controller/-/abort-controller-3.0.0.tgz#eaf54d53b62bae4138e809ca225c8439a6efb392"
+  integrity sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg==
+  dependencies:
+    event-target-shim "^5.0.0"
+
 abstract-leveldown@^5.0.0, abstract-leveldown@~5.0.0:
   version "5.0.0"
   resolved "http://localhost:4873/abstract-leveldown/-/abstract-leveldown-5.0.0.tgz#f7128e1f86ccabf7d2893077ce5d06d798e386c6"
@@ -1129,6 +1183,11 @@ abstract-leveldown@~4.0.0:
   dependencies:
     xtend "~4.0.0"
 
+abstract-logging@^1.0.0:
+  version "1.0.0"
+  resolved "http://localhost:4873/abstract-logging/-/abstract-logging-1.0.0.tgz#8b7deafd310559bc28f77724dd1bb30177278c1b"
+  integrity sha1-i33q/TEFWbwo93ck3RuzAXcnjBs=
+
 accept@2.x.x:
   version "2.1.4"
   resolved "http://localhost:4873/accept/-/accept-2.1.4.tgz#887af54ceee5c7f4430461971ec400c61d09acbb"
@@ -1136,6 +1195,14 @@ accept@2.x.x:
   dependencies:
     boom "5.x.x"
     hoek "4.x.x"
+
+accept@3.x.x:
+  version "3.1.3"
+  resolved "http://localhost:4873/accept/-/accept-3.1.3.tgz#29c3e2b3a8f4eedbc2b690e472b9ebbdc7385e87"
+  integrity sha512-OgOEAidVEOKPup+Gv2+2wdH2AgVKI9LxsJ4hicdJ6cY0faUuZdZoi56kkXWlHp9qicN1nWQLmW5ZRGk+SBS5xg==
+  dependencies:
+    boom "7.x.x"
+    hoek "6.x.x"
 
 accepts@^1.3.0, accepts@~1.3.4, accepts@~1.3.5:
   version "1.3.5"
@@ -1216,6 +1283,13 @@ ammo@2.x.x:
   dependencies:
     boom "5.x.x"
     hoek "4.x.x"
+
+ammo@3.x.x:
+  version "3.0.3"
+  resolved "http://localhost:4873/ammo/-/ammo-3.0.3.tgz#502aafa9d8bfca264143e226e5f322716e746b0c"
+  integrity sha512-vo76VJ44MkUBZL/BzpGXaKzMfroF4ZR6+haRuw9p+eSWfoNaH2AxVc8xmiEPC08jhzJSeM6w7/iMUGet8b4oBQ==
+  dependencies:
+    hoek "6.x.x"
 
 ansi-align@^2.0.0:
   version "2.0.0"
@@ -1308,7 +1382,7 @@ aproba@^1.0.3, aproba@^1.1.1:
   resolved "http://localhost:4873/aproba/-/aproba-1.2.0.tgz#6802e6264efd18c790a1b0d517f0f2627bf2c94a"
   integrity sha512-Y9J6ZjXtoYh8RnXVCMOU/ttDmk1aBjunq9vO0ta5x85WDQiQfUF9sIPBITdbiiIVcBo03Hi3jMxigBtsddlXRw==
 
-arch@^2.1.0:
+arch@^2.1.0, arch@^2.1.1:
   version "2.1.1"
   resolved "http://localhost:4873/arch/-/arch-2.1.1.tgz#8f5c2731aa35a30929221bb0640eed65175ec84e"
   integrity sha512-BLM56aPo9vLLFVa8+/+pJLnrZ7QGGTVHWsCwieAWT9o9K8UeGaQbzZbGoabWLOo2ksBCztoXdqBZBplqLDDCSg==
@@ -1334,6 +1408,16 @@ argparse@^1.0.7:
   integrity sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==
   dependencies:
     sprintf-js "~1.0.2"
+
+args@^5.0.0:
+  version "5.0.1"
+  resolved "http://localhost:4873/args/-/args-5.0.1.tgz#4bf298df90a4799a09521362c579278cc2fdd761"
+  integrity sha512-1kqmFCFsPffavQFGt8OxJdIcETti99kySRUPMpOhaGjL6mRJn8HFU1OxKY5bMqfZKUwTQc1mZkAjmGYaVOHFtQ==
+  dependencies:
+    camelcase "5.0.0"
+    chalk "2.4.2"
+    leven "2.1.0"
+    mri "1.1.4"
 
 aria-query@^3.0.0:
   version "3.0.0"
@@ -1581,6 +1665,13 @@ b64@3.x.x:
   version "3.0.3"
   resolved "http://localhost:4873/b64/-/b64-3.0.3.tgz#36afeee0d9345f046387ce6de8a6702afe5bb56e"
   integrity sha512-Pbeh0i6OLubPJdIdCepn8ZQHwN2MWznZHbHABSTEfQ706ie+yuxNSaPdqX1xRatT6WanaS1EazMiSg0NUW2XxQ==
+
+b64@4.x.x:
+  version "4.1.2"
+  resolved "http://localhost:4873/b64/-/b64-4.1.2.tgz#7015372ba8101f7fb18da070717a93c28c8580d8"
+  integrity sha512-+GUspBxlH3CJaxMUGUE1EBoWM6RKgWiYwUDal0qdf8m3ArnXNN1KzKVo5HOnE/FSq4HHyWf3TlHLsZI8PKQgrQ==
+  dependencies:
+    hoek "6.x.x"
 
 babel-code-frame@6.26.0, babel-code-frame@^6.26.0:
   version "6.26.0"
@@ -2052,7 +2143,7 @@ boom@5.x.x:
   dependencies:
     hoek "4.x.x"
 
-boom@^7.2.0, boom@^7.3.0:
+boom@7.x.x, boom@^7.2.0, boom@^7.3.0:
   version "7.3.0"
   resolved "http://localhost:4873/boom/-/boom-7.3.0.tgz#733a6d956d33b0b1999da3fe6c12996950d017b9"
   integrity sha512-Swpoyi2t5+GhOEGw8rEsKvTxFLIDiiKoUc2gsoV6Lyr43LHBIzch3k2MvYUs8RTROrIkVJ3Al0TkaOGjnb+B6A==
@@ -2069,6 +2160,14 @@ borc@^2.1.0:
     ieee754 "^1.1.8"
     iso-url "~0.4.4"
     json-text-sequence "~0.1.0"
+
+bounce@1.x.x:
+  version "1.2.3"
+  resolved "http://localhost:4873/bounce/-/bounce-1.2.3.tgz#2b286d36eb21d5f08fe672dd8cd37a109baad121"
+  integrity sha512-3G7B8CyBnip5EahCZJjnvQ1HLyArC6P5e+xcolo13BVI9ogFaDOsNMAE7FIWliHtIkYI8/nTRCvCY9tZa3Mu4g==
+  dependencies:
+    boom "7.x.x"
+    hoek "6.x.x"
 
 bourne@1.x.x:
   version "1.1.2"
@@ -2308,6 +2407,11 @@ builtin-status-codes@^3.0.0:
   resolved "http://localhost:4873/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
   integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
 
+byte-size@^5.0.1:
+  version "5.0.1"
+  resolved "http://localhost:4873/byte-size/-/byte-size-5.0.1.tgz#4b651039a5ecd96767e71a3d7ed380e48bed4191"
+  integrity sha512-/XuKeqWocKsYa/cBY1YbSJSWWqTi4cFgr9S6OyM7PBaPbr9zvNGwWP33vt0uqGhwDdN+y3yhbXVILEUpnwEWGw==
+
 byteman@^1.3.5:
   version "1.3.5"
   resolved "http://localhost:4873/byteman/-/byteman-1.3.5.tgz#d6061f7536c7e7c4bcb756037ef9c4c266ec51fd"
@@ -2382,6 +2486,19 @@ cacheable-request@^2.1.1:
     normalize-url "2.0.1"
     responselike "1.0.2"
 
+cacheable-request@^6.0.0:
+  version "6.0.0"
+  resolved "http://localhost:4873/cacheable-request/-/cacheable-request-6.0.0.tgz#4a1727414e02ac4af82560c4da1b61daa3fa2b63"
+  integrity sha512-2N7AmszH/WPPpl5Z3XMw1HAP+8d+xugnKQAeKvxFZ/04dbT/CAznqwbl+7eSr3HkwdepNwtb2yx3CAMQWvG01Q==
+  dependencies:
+    clone-response "^1.0.2"
+    get-stream "^4.0.0"
+    http-cache-semantics "^4.0.0"
+    keyv "^3.0.0"
+    lowercase-keys "^1.0.1"
+    normalize-url "^3.1.0"
+    responselike "^1.0.2"
+
 call-me-maybe@^1.0.1:
   version "1.0.1"
   resolved "http://localhost:4873/call-me-maybe/-/call-me-maybe-1.0.1.tgz#26d208ea89e37b5cbde60250a15f031c16a4d66b"
@@ -2394,6 +2511,14 @@ call@4.x.x:
   dependencies:
     boom "5.x.x"
     hoek "4.x.x"
+
+call@5.x.x:
+  version "5.0.3"
+  resolved "http://localhost:4873/call/-/call-5.0.3.tgz#5dc82c698141c2d45c51a9c3c7e0697f43ac46a2"
+  integrity sha512-eX16KHiAYXugbFu6VifstSdwH6aMuWWb4s0qvpq1nR1b+Sf+u68jjttg8ixDBEldPqBi30bDU35OJQWKeTLKxg==
+  dependencies:
+    boom "7.x.x"
+    hoek "6.x.x"
 
 caller-callsite@^2.0.0:
   version "2.0.0"
@@ -2431,6 +2556,11 @@ camelcase-keys@^2.0.0:
   dependencies:
     camelcase "^2.0.0"
     map-obj "^1.0.0"
+
+camelcase@5.0.0:
+  version "5.0.0"
+  resolved "http://localhost:4873/camelcase/-/camelcase-5.0.0.tgz#03295527d58bd3cd4aa75363f35b2e8d97be2f42"
+  integrity sha512-faqwZqnWxbxn+F1d399ygeamQNy3lPp/H9H6rNrqYh4FSVCtcY+3cub1MxA8o9mDd55mM8Aghuu/kuyYA6VTsA==
 
 camelcase@^2.0.0:
   version "2.1.1"
@@ -2492,6 +2622,23 @@ catbox-memory@2.x.x:
   dependencies:
     hoek "4.x.x"
 
+catbox-memory@4.x.x:
+  version "4.0.1"
+  resolved "http://localhost:4873/catbox-memory/-/catbox-memory-4.0.1.tgz#3371ae0dd91bbf5d9dd88dcab5332470354cbd1f"
+  integrity sha512-ZmqNiLsYCIu9qvBJ/MQbznDV2bFH5gFiH67TgIJgSSffJFtTXArT+MM3AvJQlby9NSkLHOX4eH/uuUqnch/Ldw==
+  dependencies:
+    boom "7.x.x"
+    hoek "6.x.x"
+
+catbox@10.x.x:
+  version "10.0.6"
+  resolved "http://localhost:4873/catbox/-/catbox-10.0.6.tgz#d8d8dc3c36c965560539f94245904b229a8af428"
+  integrity sha512-gQWCnF/jbHcfwGbQ4FQxyRiAwLRipqWTTXjpq7rTqqdcsnZosFa0L3LsCZcPTF33QIeMMkS7QmFBHt6QdzGPvg==
+  dependencies:
+    boom "7.x.x"
+    hoek "6.x.x"
+    joi "14.x.x"
+
 catbox@7.x.x:
   version "7.1.5"
   resolved "http://localhost:4873/catbox/-/catbox-7.1.5.tgz#c56f7e8e9555d27c0dc038a96ef73e57d186bb1f"
@@ -2532,7 +2679,7 @@ chalk@1.1.3, chalk@^1.0.0, chalk@^1.1.3:
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
 
-chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.1, chalk@^2.3.2, chalk@^2.4.1, chalk@^2.4.2:
+chalk@2.4.2, chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.1, chalk@^2.3.2, chalk@^2.4.1, chalk@^2.4.2:
   version "2.4.2"
   resolved "http://localhost:4873/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
   integrity sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==
@@ -2674,6 +2821,16 @@ cids@~0.5.2, cids@~0.5.4, cids@~0.5.5, cids@~0.5.6, cids@~0.5.7, cids@~0.5.8:
     multicodec "~0.5.0"
     multihashes "~0.4.14"
 
+cids@~0.6.0:
+  version "0.6.0"
+  resolved "http://localhost:4873/cids/-/cids-0.6.0.tgz#0de7056a5246a7c7ebf3134eb4d83b3b8b841a06"
+  integrity sha512-34wuIeiBZOuvBwUuYR4XooVuXUQI2PYU9VmgM2eB3xkSmQYRlv2kh/dIbmGiLY2GuONlGR3lLtYdVkx1G9yXUg==
+  dependencies:
+    class-is "^1.1.0"
+    multibase "~0.6.0"
+    multicodec "~0.5.0"
+    multihashes "~0.4.14"
+
 cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
   version "1.0.4"
   resolved "http://localhost:4873/cipher-base/-/cipher-base-1.0.4.tgz#8760e4ecc272f4c363532f926d874aae2c1397de"
@@ -2754,6 +2911,14 @@ clipboardy@^1.2.3:
     arch "^2.1.0"
     execa "^0.8.0"
 
+clipboardy@^2.0.0:
+  version "2.0.0"
+  resolved "http://localhost:4873/clipboardy/-/clipboardy-2.0.0.tgz#3fcee421fdeca4e6a62ce72b66f3eb0c42165acd"
+  integrity sha512-XbVjHMsss0giNUkp/tV/3eEAZe8i1fZTLzmPKqjE1RGIAWOTiF5D014f6R+g53ZAq0IK3cPrJXFvqE8eQjhFYQ==
+  dependencies:
+    arch "^2.1.1"
+    execa "^1.0.0"
+
 cliui@^3.2.0:
   version "3.2.0"
   resolved "http://localhost:4873/cliui/-/cliui-3.2.0.tgz#120601537a916d29940f934da3b48d585a39213d"
@@ -2772,7 +2937,17 @@ cliui@^4.0.0:
     strip-ansi "^4.0.0"
     wrap-ansi "^2.0.0"
 
-clone-response@1.0.2:
+clone-deep@^2.0.1:
+  version "2.0.2"
+  resolved "http://localhost:4873/clone-deep/-/clone-deep-2.0.2.tgz#00db3a1e173656730d1188c3d6aced6d7ea97713"
+  integrity sha512-SZegPTKjCgpQH63E+eN6mVEEPdQBOUzjyJm5Pora4lrwWRFS8I0QAxV/KD6vV/i0WuijHZWQC1fMsPEdxfdVCQ==
+  dependencies:
+    for-own "^1.0.0"
+    is-plain-object "^2.0.4"
+    kind-of "^6.0.0"
+    shallow-clone "^1.0.0"
+
+clone-response@1.0.2, clone-response@^1.0.2:
   version "1.0.2"
   resolved "http://localhost:4873/clone-response/-/clone-response-1.0.2.tgz#d1dc973920314df67fbeb94223b4ee350239e96b"
   integrity sha1-0dyXOSAxTfZ/vrlCI7TuNQI56Ws=
@@ -2893,7 +3068,7 @@ commander@~2.8.1:
   dependencies:
     graceful-readlink ">= 1.0.0"
 
-common-tags@^1.4.0:
+common-tags@^1.4.0, common-tags@^1.8.0:
   version "1.8.0"
   resolved "http://localhost:4873/common-tags/-/common-tags-1.8.0.tgz#8e3153e542d4a39e9b10554434afaaf98956a937"
   integrity sha512-6P6g0uetGpW/sdyUy/iQQCbFF0kWVMSIVSyYz7Zgjcgh8mgw8PQzDNZeyZ5DQ2gM7LBoZPHmnjz8rUthkBG5tw==
@@ -2972,7 +3147,7 @@ concat-stream@^2.0.0:
     readable-stream "^3.0.2"
     typedarray "^0.0.6"
 
-concat-stream@hugomrdias/concat-stream#feat/smaller:
+"concat-stream@github:hugomrdias/concat-stream#feat/smaller", concat-stream@hugomrdias/concat-stream#feat/smaller:
   version "2.0.0"
   resolved "https://codeload.github.com/hugomrdias/concat-stream/tar.gz/057bc7b5d6d8df26c8cf00a3f151b6721a0a8034"
   dependencies:
@@ -3076,6 +3251,13 @@ content@3.x.x, content@^3.0.0:
   integrity sha512-LXtnSnvE+Z1Cjpa3P9gh9kb396qV4MqpfwKy777BOSF8n6nw2vAi03tHNl0/XRqZUyzVzY/+nMXOZVnEapWzdg==
   dependencies:
     boom "5.x.x"
+
+content@4.x.x:
+  version "4.0.6"
+  resolved "http://localhost:4873/content/-/content-4.0.6.tgz#76ffd96c5cbccf64fe3923cbb9c48b8bc04b273e"
+  integrity sha512-lR9ND3dXiMdmsE84K6l02rMdgiBVmtYWu1Vr/gfSGHcIcznBj2QxmSdUgDuNFOA+G9yrb1IIWkZ7aKtB6hDGyA==
+  dependencies:
+    boom "7.x.x"
 
 convert-css-length@^1.0.1:
   version "1.0.2"
@@ -3281,6 +3463,13 @@ cryptiles@3.x.x:
   integrity sha512-8I1sgZHfVwcSOY6mSGpVU3lw/GSIZvusg8dD2+OGehCJpOhQRLNcH0qb9upQnOH4XhgxxFJSg6E2kx95deb1Tw==
   dependencies:
     boom "5.x.x"
+
+cryptiles@4.x.x:
+  version "4.1.3"
+  resolved "http://localhost:4873/cryptiles/-/cryptiles-4.1.3.tgz#2461d3390ea0b82c643a6ba79f0ed491b0934c25"
+  integrity sha512-gT9nyTMSUC1JnziQpPbxKGBbUg8VL7Zn2NB4E1cJYvuXdElHrwxrV9bmltZGDzet45zSDGyYceueke1TjynGzw==
+  dependencies:
+    boom "7.x.x"
 
 crypto-browserify@^3.11.0:
   version "3.12.0"
@@ -3512,6 +3701,11 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
+currify@^3.0.0:
+  version "3.0.0"
+  resolved "http://localhost:4873/currify/-/currify-3.0.0.tgz#ec5b18fe65c2b3b08daba7f2a75a01063b2c89c2"
+  integrity sha512-ecz0Dq3T2UwiLwhiYvEFhdM4yUvlCLRgVbvpt6oI8RteJzEztum1UbLbN6snQ5nfHqtMcnrxkd7N0LeAIErorw==
+
 cwebp-bin@^5.0.0:
   version "5.0.0"
   resolved "http://localhost:4873/cwebp-bin/-/cwebp-bin-5.0.0.tgz#3d408f30ada69bc45b4306e88b50c382ba01a9b6"
@@ -3601,6 +3795,11 @@ date-now@^0.1.4:
   version "0.1.4"
   resolved "http://localhost:4873/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
   integrity sha1-6vQ5/U1ISK105cx9vvIAZyueNFs=
+
+dateformat@^3.0.3:
+  version "3.0.3"
+  resolved "http://localhost:4873/dateformat/-/dateformat-3.0.3.tgz#a6e37499a4d9a9cf85ef5872044d62901c9889ae"
+  integrity sha512-jyCETtSl3VMZMWeRo7iY1FL19ges1t55hMo5yaam4Jrsm5EPL89UQkoQRyiI+Yf4k8r2ZpdngkV8hr1lIdjb3Q==
 
 debug@2, debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.3, debug@^2.6.6, debug@^2.6.8, debug@^2.6.9:
   version "2.6.9"
@@ -3739,6 +3938,11 @@ defaults@^1.0.3:
   integrity sha1-xlYFHpgX2f8I7YgUd/P+QBnz730=
   dependencies:
     clone "^1.0.2"
+
+defer-to-connect@^1.0.1:
+  version "1.0.2"
+  resolved "http://localhost:4873/defer-to-connect/-/defer-to-connect-1.0.2.tgz#4bae758a314b034ae33902b5aac25a8dd6a8633e"
+  integrity sha512-k09hcQcTDY+cwgiwa6PYKLm3jlagNzQ+RSvhjzESOGOx+MNOuXkxTfEvPrO1IOQ81tArCFYQgi631clB70RpQw==
 
 deferred-leveldown@~1.2.1:
   version "1.2.2"
@@ -3973,6 +4177,20 @@ dns-packet@^4.0.0:
   dependencies:
     ip "^1.1.5"
     safe-buffer "^5.1.1"
+
+dns-packet@^5.1.2:
+  version "5.2.1"
+  resolved "http://localhost:4873/dns-packet/-/dns-packet-5.2.1.tgz#26cec0be92252a1b97ed106482921192a7e08f72"
+  integrity sha512-JHj2yJeKOqlxzeuYpN1d56GfhzivAxavNwHj9co3qptECel27B1rLY5PifJAvubsInX5pGLDjAHuCfCUc2Zv/w==
+  dependencies:
+    ip "^1.1.5"
+
+dns-socket@^4.1.1:
+  version "4.2.0"
+  resolved "http://localhost:4873/dns-socket/-/dns-socket-4.2.0.tgz#92575505c4c18ac3ad241f4bb3ff4369761557e9"
+  integrity sha512-4XuD3z28jht3jvHbiom6fAipgG5LkjYeDLrX5OH8cbl0AtzTyUUAxGckcW8T7z0pLfBBV5qOiuC4wUEohk6FrQ==
+  dependencies:
+    dns-packet "^5.1.2"
 
 dns-txt@^2.0.2:
   version "2.0.2"
@@ -4695,6 +4913,11 @@ event-source-polyfill@^1.0.5:
   resolved "http://localhost:4873/event-source-polyfill/-/event-source-polyfill-1.0.5.tgz#b34be2740a685a8dc65ae750065fc983538ffcfe"
   integrity sha512-PdStgZ3+G2o2gjqsBYbV4931ByVmwLwSrX7mFgawCL+9I1npo9dwAQTnWtNWXe5IY2P8+AbbPteeOueiEtRCUA==
 
+event-target-shim@^5.0.0:
+  version "5.0.1"
+  resolved "http://localhost:4873/event-target-shim/-/event-target-shim-5.0.1.tgz#5d4d3ebdf9583d63a5333ce2deb7480ab2b05789"
+  integrity sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ==
+
 eventemitter3@^3.0.0:
   version "3.1.0"
   resolved "http://localhost:4873/eventemitter3/-/eventemitter3-3.1.0.tgz#090b4d6cdbd645ed10bf750d4b5407942d7ba163"
@@ -5010,6 +5233,11 @@ fast-glob@^2.0.2, fast-glob@^2.2.2:
     merge2 "^1.2.3"
     micromatch "^3.1.10"
 
+fast-json-parse@^1.0.3:
+  version "1.0.3"
+  resolved "http://localhost:4873/fast-json-parse/-/fast-json-parse-1.0.3.tgz#43e5c61ee4efa9265633046b770fb682a7577c4d"
+  integrity sha512-FRWsaZRWEJ1ESVNbDWmsAlqDk96gPQezzLghafp5J4GUKjbCz3OkAHuZs5TuPEtkbVQERysLp9xv6c24fBm8Aw==
+
 fast-json-stable-stringify@^2.0.0:
   version "2.0.0"
   resolved "http://localhost:4873/fast-json-stable-stringify/-/fast-json-stable-stringify-2.0.0.tgz#d5142c0caee6b1189f87d3a76111064f86c8bbf2"
@@ -5019,6 +5247,16 @@ fast-levenshtein@^2.0.6, fast-levenshtein@~2.0.4:
   version "2.0.6"
   resolved "http://localhost:4873/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
+
+fast-redact@^1.4.4:
+  version "1.5.0"
+  resolved "http://localhost:4873/fast-redact/-/fast-redact-1.5.0.tgz#302892f566750c4f5eec7b830bfc9bc473484034"
+  integrity sha512-Afo61CgUjkzdvOKDHn08qnZ0kwck38AOGcMlvSGzvJbIab6soAP5rdoQayecGCDsD69AiF9vJBXyq31eoEO2tQ==
+
+fast-safe-stringify@^2.0.6:
+  version "2.0.6"
+  resolved "http://localhost:4873/fast-safe-stringify/-/fast-safe-stringify-2.0.6.tgz#04b26106cc56681f51a044cfc0d76cf0008ac2c2"
+  integrity sha512-q8BZ89jjc+mz08rSxROs8VsrBBcn1SIw1kq9NjolL509tkABRk9io01RAjSaEv1Xb2uFLt8VtRiZbGp5H8iDtg==
 
 fast-write-atomic@~0.2.0:
   version "0.2.1"
@@ -5296,6 +5534,11 @@ flatmap@0.0.3:
   resolved "http://localhost:4873/flatmap/-/flatmap-0.0.3.tgz#1f18a4d938152d495965f9c958d923ab2dd669b4"
   integrity sha1-Hxik2TgVLUlZZfnJWNkjqy3WabQ=
 
+flatstr@^1.0.9:
+  version "1.0.9"
+  resolved "http://localhost:4873/flatstr/-/flatstr-1.0.9.tgz#0950d56fec02de1030c1311847ecd58c25690eb9"
+  integrity sha512-qFlJnOBWDfIaunF54/lBqNKmXOI0HqNhu+mHkLmbaBXlS71PUd9OjFOdyevHt/aHoHB1+eW7eKHgRKOG5aHSpw==
+
 flatted@^2.0.0:
   version "2.0.0"
   resolved "http://localhost:4873/flatted/-/flatted-2.0.0.tgz#55122b6536ea496b4b44893ee2608141d10d9916"
@@ -5333,10 +5576,22 @@ for-each@^0.3.3:
   dependencies:
     is-callable "^1.1.3"
 
-for-in@^1.0.2:
+for-in@^0.1.3:
+  version "0.1.8"
+  resolved "http://localhost:4873/for-in/-/for-in-0.1.8.tgz#d8773908e31256109952b1fdb9b3fa867d2775e1"
+  integrity sha1-2Hc5COMSVhCZUrH9ubP6hn0ndeE=
+
+for-in@^1.0.1, for-in@^1.0.2:
   version "1.0.2"
   resolved "http://localhost:4873/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
   integrity sha1-gQaNKVqBQuwKxybG4iAMMPttXoA=
+
+for-own@^1.0.0:
+  version "1.0.0"
+  resolved "http://localhost:4873/for-own/-/for-own-1.0.0.tgz#c63332f415cedc4b04dbfe70cf836494c53cb44b"
+  integrity sha1-xjMy9BXO3EsE2/5wz4NklMU8tEs=
+  dependencies:
+    for-in "^1.0.1"
 
 forever-agent@~0.6.1:
   version "0.6.1"
@@ -5351,6 +5606,13 @@ form-data@^2.3.3, form-data@~2.3.2:
     asynckit "^0.4.0"
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
+
+format-io@^1.0.1:
+  version "1.0.3"
+  resolved "http://localhost:4873/format-io/-/format-io-1.0.3.tgz#e63391b567fe348bccac138c796011569b343150"
+  integrity sha512-pvhpU75XNwBElVZ+LBZ/gIIhmmtgKBhwo2Lwo/nmyLKQ2uDktbyvO3V/iOvZUzSlN+n0pEv9wnfyLe2fBySIXg==
+  dependencies:
+    currify "^3.0.0"
 
 formidable@^1.2.0:
   version "1.2.1"
@@ -5992,7 +6254,7 @@ get-stream@^2.2.0:
     object-assign "^4.0.1"
     pinkie-promise "^2.0.0"
 
-get-stream@^4.0.0:
+get-stream@^4.0.0, get-stream@^4.1.0:
   version "4.1.0"
   resolved "http://localhost:4873/get-stream/-/get-stream-4.1.0.tgz#c1b255575f3dc21d59bfc79cd3d2b46b1c3a54b5"
   integrity sha512-GMat4EJ5161kIy2HevLlr4luNjBgvmj413KaQA7jt4V8B4RDsfpHk7WQ9GVqfYyyx8OS/L66Kox+rJRNklLK7w==
@@ -6188,6 +6450,23 @@ got@^8.3.1:
     url-parse-lax "^3.0.0"
     url-to-options "^1.0.1"
 
+got@^9.4.0, got@^9.6.0:
+  version "9.6.0"
+  resolved "http://localhost:4873/got/-/got-9.6.0.tgz#edf45e7d67f99545705de1f7bbeeeb121765ed85"
+  integrity sha512-R7eWptXuGYxwijs0eV+v3o6+XH1IqVK8dJOEecQfTmkncw9AV4dcw/Dhxi8MdlqPthxxpZyizMzyg8RTmEsG+Q==
+  dependencies:
+    "@sindresorhus/is" "^0.14.0"
+    "@szmarczak/http-timer" "^1.1.2"
+    cacheable-request "^6.0.0"
+    decompress-response "^3.3.0"
+    duplexer3 "^0.1.4"
+    get-stream "^4.1.0"
+    lowercase-keys "^1.0.1"
+    mimic-response "^1.0.1"
+    p-cancelable "^1.0.0"
+    to-readable-stream "^1.0.0"
+    url-parse-lax "^3.0.0"
+
 graceful-fs@^4.1.10, graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.1.9:
   version "4.1.15"
   resolved "http://localhost:4873/graceful-fs/-/graceful-fs-4.1.15.tgz#ffb703e1066e8a0eeaa4c8b80ba9253eeefbfb00"
@@ -6313,6 +6592,16 @@ handle-thing@^2.0.0:
   resolved "http://localhost:4873/handle-thing/-/handle-thing-2.0.0.tgz#0e039695ff50c93fc288557d696f3c1dc6776754"
   integrity sha512-d4sze1JNC454Wdo2fkuyzCr6aHcbL6PGGuFAz0Li/NcOm1tCHGnWDRmJP85dh9IhQErTc2svWFEX5xHIOo//kQ==
 
+hapi-pino@^5.2.0:
+  version "5.4.1"
+  resolved "http://localhost:4873/hapi-pino/-/hapi-pino-5.4.1.tgz#b4ea582037b924b05e826cb68907295ba9bbe531"
+  integrity sha512-Bmt0XtRm5xPRE26bcn4dakgLPyAPyadEI5LF9P4EMP43XDzbxl4wQqwe2uVC463X9txdkwOAjaan3vDTC/guaQ==
+  dependencies:
+    abstract-logging "^1.0.0"
+    hoek "^6.1.2"
+    pino "^5.10.1"
+    pino-pretty "^2.5.0"
+
 hapi-set-header@^1.0.2:
   version "1.0.2"
   resolved "http://localhost:4873/hapi-set-header/-/hapi-set-header-1.0.2.tgz#2afae002c6719d6d54f3fa88462f822892d2df13"
@@ -6342,6 +6631,30 @@ hapi@^16.6.2:
     statehood "5.x.x"
     subtext "5.x.x"
     topo "2.x.x"
+
+hapi@^18.0.0:
+  version "18.1.0"
+  resolved "http://localhost:4873/hapi/-/hapi-18.1.0.tgz#98a2a5a8f37a41eb196bdad9727f66b1fbca5fec"
+  integrity sha512-nSU1VLyTAgp7P5gy47QzJIP2JAb+wOFvJIV3gnL0lFj/mD+HuTXhyUsDYXjF/dhADMVXVEz31z6SUHBJhtsvGA==
+  dependencies:
+    accept "3.x.x"
+    ammo "3.x.x"
+    boom "7.x.x"
+    bounce "1.x.x"
+    call "5.x.x"
+    catbox "10.x.x"
+    catbox-memory "4.x.x"
+    heavy "6.x.x"
+    hoek "6.x.x"
+    joi "14.x.x"
+    mimos "4.x.x"
+    podium "3.x.x"
+    shot "4.x.x"
+    somever "2.x.x"
+    statehood "6.x.x"
+    subtext "6.x.x"
+    teamwork "3.x.x"
+    topo "3.x.x"
 
 har-schema@^2.0.0:
   version "2.0.0"
@@ -6574,6 +6887,15 @@ heavy@4.x.x:
     hoek "4.x.x"
     joi "10.x.x"
 
+heavy@6.x.x:
+  version "6.1.2"
+  resolved "http://localhost:4873/heavy/-/heavy-6.1.2.tgz#e5d56f18170a37b01d4381bc07fece5edc68520b"
+  integrity sha512-cJp884bqhiebNcEHydW0g6V1MUGYOXRPw9c7MFiHQnuGxtbWuSZpsbojwb2kxb3AA1/Rfs8CNiV9MMOF8pFRDg==
+  dependencies:
+    boom "7.x.x"
+    hoek "6.x.x"
+    joi "14.x.x"
+
 hex-color-regex@^1.1.0:
   version "1.1.0"
   resolved "http://localhost:4873/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
@@ -6668,6 +6990,11 @@ http-cache-semantics@3.8.1:
   version "3.8.1"
   resolved "http://localhost:4873/http-cache-semantics/-/http-cache-semantics-3.8.1.tgz#39b0e16add9b605bf0a9ef3d9daaf4843b4cacd2"
   integrity sha512-5ai2iksyV8ZXmnZhHH4rWPoxxistEexSi5936zIQ1bnNTW5VnA85B6P/VpXiRM017IgRvb2kKo1a//y+0wSp3w==
+
+http-cache-semantics@^4.0.0:
+  version "4.0.3"
+  resolved "http://localhost:4873/http-cache-semantics/-/http-cache-semantics-4.0.3.tgz#495704773277eeef6e43f9ab2c2c7d259dda25c5"
+  integrity sha512-TcIMG3qeVLgDr1TEd2XvHaTnMPwYQUQMIBLy+5pLSDKYFc7UIqj39w8EGzZkaxoLv/l2K8HaI0t5AVA+YYgUew==
 
 http-deceiver@^1.2.7:
   version "1.2.7"
@@ -7047,6 +7374,13 @@ inquirer@^6.2.1:
     strip-ansi "^5.1.0"
     through "^2.3.6"
 
+inspect-with-kind@^1.0.5:
+  version "1.0.5"
+  resolved "http://localhost:4873/inspect-with-kind/-/inspect-with-kind-1.0.5.tgz#fce151d4ce89722c82ca8e9860bb96f9167c316c"
+  integrity sha512-MAQUJuIo7Xqk8EVNP+6d3CKq9c80hi4tjIbIAT6lmGW9W6WzlHiu9PS8uSuUYU+Do+j1baiFp3H25XEVxDIG2g==
+  dependencies:
+    kind-of "^6.0.2"
+
 interface-connection@~0.3.2, interface-connection@~0.3.3:
   version "0.3.3"
   resolved "http://localhost:4873/interface-connection/-/interface-connection-0.3.3.tgz#d82dd81efee5f2d40d7cb0fd75e6e858f92fa199"
@@ -7151,6 +7485,26 @@ ipfs-bitswap@~0.22.0:
     lodash.isequalwith "^4.4.0"
     moving-average "^1.0.0"
     multicodec "~0.2.7"
+    multihashing-async "~0.5.1"
+    protons "^1.0.1"
+    pull-length-prefixed "^1.3.1"
+    pull-stream "^3.6.9"
+    varint-decoder "~0.1.1"
+
+ipfs-bitswap@~0.23.0:
+  version "0.23.0"
+  resolved "http://localhost:4873/ipfs-bitswap/-/ipfs-bitswap-0.23.0.tgz#911bdf898afdbd7353fde42a16047deaa8373a04"
+  integrity sha512-6gim1Y3WUk4hh+EmrWFiPwtHdeVXCr0QwAHOs2Y8mLLpuYF29Y2weugO3Ggkjcx1t+0wiQFIj7SMwsBBUNe8FA==
+  dependencies:
+    async "^2.6.1"
+    bignumber.js "^8.0.1"
+    cids "~0.5.8"
+    debug "^4.1.0"
+    ipfs-block "~0.8.0"
+    just-debounce-it "^1.1.0"
+    lodash.isequalwith "^4.4.0"
+    moving-average "^1.0.0"
+    multicodec "~0.5.0"
     multihashing-async "~0.5.1"
     protons "^1.0.1"
     pull-length-prefixed "^1.3.1"
@@ -7266,6 +7620,54 @@ ipfs-http-client@^30.1.0:
     tar-stream "^2.0.1"
     through2 "^3.0.1"
 
+ipfs-http-client@^30.1.1:
+  version "30.1.3"
+  resolved "http://localhost:4873/ipfs-http-client/-/ipfs-http-client-30.1.3.tgz#4767ed544fcaa1ac44d6b39cb2fc85cef170899f"
+  integrity sha512-NQ7WTLKUZeoKaKXrTSLAtjASRYCR0bPdsolZf16Y7Gt7o3RfiPpFF+AqvP0xbekOV3/zhFj2Qyf6ShEV4CCtsQ==
+  dependencies:
+    async "^2.6.1"
+    bignumber.js "^8.0.2"
+    bl "^3.0.0"
+    bs58 "^4.0.1"
+    buffer "^5.2.1"
+    cids "~0.5.5"
+    concat-stream hugomrdias/concat-stream#feat/smaller
+    debug "^4.1.0"
+    detect-node "^2.0.4"
+    end-of-stream "^1.4.1"
+    err-code "^1.1.2"
+    flatmap "0.0.3"
+    glob "^7.1.3"
+    ipfs-block "~0.8.0"
+    ipld-dag-cbor "~0.13.1"
+    ipld-dag-pb "~0.15.3"
+    is-ipfs "~0.6.0"
+    is-pull-stream "0.0.0"
+    is-stream "^1.1.0"
+    iso-stream-http "~0.1.2"
+    iso-url "~0.4.6"
+    just-kebab-case "^1.1.0"
+    just-map-keys "^1.1.0"
+    lru-cache "^5.1.1"
+    multiaddr "^6.0.6"
+    multibase "~0.6.0"
+    multicodec "~0.5.0"
+    multihashes "~0.4.14"
+    ndjson hugomrdias/ndjson#feat/readable-stream3
+    once "^1.4.0"
+    peer-id "~0.12.2"
+    peer-info "~0.15.1"
+    promisify-es6 "^1.0.3"
+    pull-defer "~0.2.3"
+    pull-stream "^3.6.9"
+    pull-to-stream "~0.1.0"
+    pump "^3.0.0"
+    qs "^6.5.2"
+    readable-stream "^3.1.1"
+    stream-to-pull-stream "^1.7.2"
+    tar-stream "^2.0.1"
+    through2 "^3.0.1"
+
 ipfs-http-response@~0.2.1:
   version "0.2.2"
   resolved "http://localhost:4873/ipfs-http-response/-/ipfs-http-response-0.2.2.tgz#40f1dad22c73b4d64fcfad8a2cbe55f634f4a2ec"
@@ -7282,6 +7684,35 @@ ipfs-http-response@~0.2.1:
     multihashes "~0.4.14"
     promisify-es6 "^1.0.3"
     stream-to-blob "^1.0.1"
+
+ipfs-mfs@~0.10.2:
+  version "0.10.4"
+  resolved "http://localhost:4873/ipfs-mfs/-/ipfs-mfs-0.10.4.tgz#44244f732a35e7031783b6ab7bdde276a724de01"
+  integrity sha512-WFGSkbSdpUcHXstLhhK1Tn/CFXtQTtRH6zPGvjGoZ+Zmap3LXc4gwVkIlaswllZhzP9lOYhPULC3rLZc/IuUUw==
+  dependencies:
+    async "^2.6.1"
+    cids "~0.5.5"
+    debug "^4.1.0"
+    filereader-stream "^2.0.0"
+    hamt-sharding "~0.0.2"
+    interface-datastore "~0.6.0"
+    ipfs-multipart "~0.1.0"
+    ipfs-unixfs "~0.1.16"
+    ipfs-unixfs-exporter "~0.36.1"
+    ipfs-unixfs-importer "~0.38.5"
+    ipld-dag-pb "~0.15.2"
+    is-pull-stream "~0.0.0"
+    is-stream "^1.1.0"
+    joi "^14.3.0"
+    joi-browser "^13.4.0"
+    mortice "^1.2.1"
+    once "^1.4.0"
+    promisify-es6 "^1.0.3"
+    pull-cat "^1.1.11"
+    pull-defer "~0.2.3"
+    pull-stream "^3.6.9"
+    pull-stream-to-stream "^1.3.4"
+    stream-to-pull-stream "^1.7.2"
 
 ipfs-mfs@~0.8.0:
   version "0.8.2"
@@ -7367,7 +7798,23 @@ ipfs-unixfs-exporter@~0.35.4, ipfs-unixfs-exporter@~0.35.5:
     pull-stream "^3.6.9"
     pull-traverse "^1.0.3"
 
-ipfs-unixfs-importer@~0.38.0:
+ipfs-unixfs-exporter@~0.36.1:
+  version "0.36.1"
+  resolved "http://localhost:4873/ipfs-unixfs-exporter/-/ipfs-unixfs-exporter-0.36.1.tgz#43a5d0781d14b90be40bd9df367ff455d634ce6f"
+  integrity sha512-J8vrUFcREYSovUm6fdwxM3X2lgumg40YDc/oKsfFxPV0K5xzfmrj+aU2AUCik8W5GBhFH24DJwwfLAY7FkwytQ==
+  dependencies:
+    async "^2.6.1"
+    cids "~0.5.5"
+    hamt-sharding "0.0.2"
+    ipfs-unixfs "~0.1.16"
+    ipfs-unixfs-importer "~0.38.0"
+    pull-cat "^1.1.11"
+    pull-defer "~0.2.3"
+    pull-paramap "^1.2.2"
+    pull-stream "^3.6.9"
+    pull-traverse "^1.0.3"
+
+ipfs-unixfs-importer@~0.38.0, ipfs-unixfs-importer@~0.38.5:
   version "0.38.5"
   resolved "http://localhost:4873/ipfs-unixfs-importer/-/ipfs-unixfs-importer-0.38.5.tgz#e11f7829743dc3b144247adc43bae8a7a9c07d3d"
   integrity sha512-OGTxagHLzlsz8QXe/Z+pmTohS75F/s0X/Yjopnsbxok3yGX2pYk6UX3XLOpq5l/E26bcsVprdHiA4AmiV+yQ9Q==
@@ -7507,6 +7954,117 @@ ipfs@^0.34.4:
     prom-client "^11.1.3"
     prometheus-gc-stats "~0.6.0"
 
+ipfs@^0.35.0:
+  version "0.35.0"
+  resolved "http://localhost:4873/ipfs/-/ipfs-0.35.0.tgz#7e8c43c567c24805cc10bd455552403ba3d372eb"
+  integrity sha512-79hxhXd4s+FzfYsgoMitAqekwg41+2iU5XZ0UgWONQoxQtTOX7bZGw7N6jws8l5NJpYqckv1MLSMsH/j4bDoZg==
+  dependencies:
+    async "^2.6.1"
+    bignumber.js "^8.0.2"
+    binary-querystring "~0.1.2"
+    bl "^3.0.0"
+    boom "^7.2.0"
+    bs58 "^4.0.1"
+    byteman "^1.3.5"
+    cid-tool "~0.2.0"
+    cids "~0.5.8"
+    class-is "^1.1.0"
+    datastore-core "~0.6.0"
+    datastore-pubsub "~0.1.1"
+    debug "^4.1.0"
+    dlv "^1.1.2"
+    err-code "^1.1.2"
+    file-type "^10.2.0"
+    fnv1a "^1.0.1"
+    fsm-event "^2.1.0"
+    get-folder-size "^2.0.0"
+    glob "^7.1.3"
+    hapi "^18.0.0"
+    hapi-pino "^5.2.0"
+    human-to-milliseconds "^1.0.0"
+    interface-datastore "~0.6.0"
+    ipfs-bitswap "~0.23.0"
+    ipfs-block "~0.8.0"
+    ipfs-block-service "~0.15.1"
+    ipfs-http-client "^30.1.1"
+    ipfs-http-response "~0.2.1"
+    ipfs-mfs "~0.10.2"
+    ipfs-multipart "~0.1.0"
+    ipfs-repo "~0.26.1"
+    ipfs-unixfs "~0.1.16"
+    ipfs-unixfs-exporter "~0.36.1"
+    ipfs-unixfs-importer "~0.38.5"
+    ipld "~0.21.1"
+    ipld-bitcoin "~0.1.8"
+    ipld-dag-cbor "~0.13.1"
+    ipld-dag-pb "~0.15.3"
+    ipld-ethereum "^2.0.1"
+    ipld-git "~0.3.0"
+    ipld-raw "^2.0.1"
+    ipld-zcash "~0.1.6"
+    ipns "~0.5.0"
+    is-ipfs "~0.6.0"
+    is-pull-stream "~0.0.0"
+    is-stream "^1.1.0"
+    iso-url "~0.4.6"
+    joi "^14.3.0"
+    just-flatten-it "^2.1.0"
+    just-safe-set "^2.1.0"
+    libp2p "~0.25.0"
+    libp2p-bootstrap "~0.9.3"
+    libp2p-crypto "~0.16.0"
+    libp2p-kad-dht "~0.14.12"
+    libp2p-keychain "~0.4.1"
+    libp2p-mdns "~0.12.0"
+    libp2p-mplex "~0.8.4"
+    libp2p-record "~0.6.1"
+    libp2p-secio "~0.11.0"
+    libp2p-tcp "~0.13.0"
+    libp2p-webrtc-star "~0.15.5"
+    libp2p-websocket-star-multi "~0.4.0"
+    libp2p-websockets "~0.12.2"
+    lodash "^4.17.11"
+    mafmt "^6.0.2"
+    merge-options "^1.0.1"
+    mime-types "^2.1.21"
+    mkdirp "~0.5.1"
+    multiaddr "^6.0.0"
+    multiaddr-to-uri "^4.0.1"
+    multibase "~0.6.0"
+    multicodec "~0.5.0"
+    multihashes "~0.4.14"
+    multihashing-async "~0.5.1"
+    node-fetch "^2.3.0"
+    peer-book "~0.9.0"
+    peer-id "~0.12.0"
+    peer-info "~0.15.0"
+    progress "^2.0.1"
+    promisify-es6 "^1.0.3"
+    protons "^1.0.1"
+    pull-abortable "^4.1.1"
+    pull-cat "^1.1.11"
+    pull-defer "~0.2.3"
+    pull-file "^1.1.0"
+    pull-ndjson "~0.1.1"
+    pull-pushable "^2.2.0"
+    pull-sort "^1.0.1"
+    pull-stream "^3.6.9"
+    pull-stream-to-stream "^1.3.4"
+    readable-stream "^3.1.1"
+    receptacle "^1.3.2"
+    stream-to-pull-stream "^1.7.3"
+    superstruct "~0.6.0"
+    tar-stream "^2.0.0"
+    temp "~0.9.0"
+    update-notifier "^2.5.0"
+    uri-to-multiaddr "^3.0.1"
+    varint "^5.0.0"
+    yargs "^13.2.2"
+    yargs-promise "^1.1.0"
+  optionalDependencies:
+    prom-client "^11.1.3"
+    prometheus-gc-stats "~0.6.0"
+
 ipfsd-ctl@^0.42.1:
   version "0.42.2"
   resolved "http://localhost:4873/ipfsd-ctl/-/ipfsd-ctl-0.42.2.tgz#b6e6db6966ac7e88dcb83c6ce1bf8cac00625b61"
@@ -7604,6 +8162,20 @@ ipld-git@~0.2.2:
     smart-buffer "^4.0.0"
     traverse "~0.6.6"
 
+ipld-git@~0.3.0:
+  version "0.3.0"
+  resolved "http://localhost:4873/ipld-git/-/ipld-git-0.3.0.tgz#a21701ef802370a959d80864a20d1449e39b2673"
+  integrity sha512-4ZqMHkKr7f2v9rizVpI9ax+2sNmYyWV48Snsf88b2DIZ/FrnukrTcRGS5NNw8f86lAkphICcczrkwhGifDtp4Q==
+  dependencies:
+    async "^2.6.2"
+    cids "~0.5.8"
+    multicodec "~0.5.0"
+    multihashes "~0.4.14"
+    multihashing-async "~0.5.2"
+    smart-buffer "^4.0.2"
+    strftime "~0.10.0"
+    traverse "~0.6.6"
+
 ipld-raw@^2.0.1:
   version "2.0.1"
   resolved "http://localhost:4873/ipld-raw/-/ipld-raw-2.0.1.tgz#aff7d471ebc26e9283910a23eff43857e3c1ab46"
@@ -7642,6 +8214,22 @@ ipld@~0.20.1:
     pull-stream "^3.6.9"
     pull-traverse "^1.0.3"
 
+ipld@~0.21.1:
+  version "0.21.1"
+  resolved "http://localhost:4873/ipld/-/ipld-0.21.1.tgz#17101b026fdee8286227dc63af162d8152c523a7"
+  integrity sha512-3RWJEtJtX8m3iaUNZCYD+4/F/ETF7MRYPN+2S4gl2OEHV8S0Cs3PoI6KvyZYDKlAkWTQtFLpWUYlUy1tMj4zqw==
+  dependencies:
+    async "^2.6.1"
+    cids "~0.5.5"
+    ipfs-block "~0.8.0"
+    ipld-dag-cbor "~0.13.0"
+    ipld-dag-pb "~0.15.2"
+    ipld-raw "^2.0.1"
+    merge-options "^1.0.1"
+    pull-defer "~0.2.3"
+    pull-stream "^3.6.9"
+    pull-traverse "^1.0.3"
+
 ipns@~0.5.0:
   version "0.5.1"
   resolved "http://localhost:4873/ipns/-/ipns-0.5.1.tgz#a7709deb9e07866352622b2f79a9be1c3d2d5dae"
@@ -7665,6 +8253,16 @@ iron@4.x.x:
     boom "5.x.x"
     cryptiles "3.x.x"
     hoek "4.x.x"
+
+iron@5.x.x:
+  version "5.0.6"
+  resolved "http://localhost:4873/iron/-/iron-5.0.6.tgz#7121d4a6e3ac2f65e4d02971646fea1995434744"
+  integrity sha512-zYUMOSkEXGBdwlV/AXF9zJC0aLuTJUKHkGeYS5I2g225M5i6SrxQyGJGhPgOR8BK1omL6N5i6TcwfsXbP8/Exw==
+  dependencies:
+    b64 "4.x.x"
+    boom "7.x.x"
+    cryptiles "4.x.x"
+    hoek "6.x.x"
 
 is-absolute-url@^2.0.0:
   version "2.1.0"
@@ -8299,6 +8897,11 @@ jimp@^0.2.24:
     tinycolor2 "^1.1.2"
     url-regex "^3.0.0"
 
+jmespath@^0.15.0:
+  version "0.15.0"
+  resolved "http://localhost:4873/jmespath/-/jmespath-0.15.0.tgz#a3f222a9aae9f966f5d27c796510e28091764217"
+  integrity sha1-o/Iiqarp+Wb10nx5ZRDigJF2Qhc=
+
 joi-browser@^13.4.0:
   version "13.4.0"
   resolved "http://localhost:4873/joi-browser/-/joi-browser-13.4.0.tgz#b72ba61b610e3f58e51b563a14e0f5225cfb6896"
@@ -8340,7 +8943,7 @@ joi@12.x.x:
     isemail "3.x.x"
     topo "2.x.x"
 
-joi@^14.0.4, joi@^14.0.6, joi@^14.3.0, joi@^14.3.1:
+joi@14.x.x, joi@^14.0.4, joi@^14.0.6, joi@^14.3.0, joi@^14.3.1:
   version "14.3.1"
   resolved "http://localhost:4873/joi/-/joi-14.3.1.tgz#164a262ec0b855466e0c35eea2a885ae8b6c703c"
   integrity sha512-LQDdM+pkOrpAn4Lp+neNIFV3axv1Vna3j38bisbQhETPMANYRbFJFUyOZcOClYvM/hppMhGWuKSFEK9vjrB+bQ==
@@ -8485,6 +9088,13 @@ jsonfile@^4.0.0:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
+jsonify-error@^1.4.4:
+  version "1.4.4"
+  resolved "http://localhost:4873/jsonify-error/-/jsonify-error-1.4.4.tgz#539e91143939728b706b73a9f5b8a656968ea67e"
+  integrity sha512-N2Fd/mABN6SLOvR72CaYYQk5sPQ0vKQhZh1zMWCTUR2q/tzvatEORktben9jaHCfc4lVaA/GFgBJ7gvCan9CeQ==
+  dependencies:
+    chalk "^2.4.1"
+
 jsonify@~0.0.0:
   version "0.0.0"
   resolved "http://localhost:4873/jsonify/-/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
@@ -8511,6 +9121,11 @@ just-debounce-it@^1.1.0:
   version "1.1.0"
   resolved "http://localhost:4873/just-debounce-it/-/just-debounce-it-1.1.0.tgz#8e92578effc155358a44f458c52ffbee66983bef"
   integrity sha512-87Nnc0qZKgBZuhFZjYVjSraic0x7zwjhaTMrCKlj0QYKH6lh0KbFzVnfu6LHan03NO7J8ygjeBeD0epejn5Zcg==
+
+just-flatten-it@^2.1.0:
+  version "2.1.0"
+  resolved "http://localhost:4873/just-flatten-it/-/just-flatten-it-2.1.0.tgz#2514337cc77ee3462869fee3d939b06ec1fd7986"
+  integrity sha512-mX3NUt/LF6EzohLJZXhywCwz2zqdhx6wVkEu6UfUx00lVQlSB6SBV1O+/Le15NfsimrWRD82H69ZkSVQZffhmw==
 
 just-kebab-case@^1.1.0:
   version "1.1.0"
@@ -8563,6 +9178,13 @@ keyv@3.0.0:
   dependencies:
     json-buffer "3.0.0"
 
+keyv@^3.0.0:
+  version "3.1.0"
+  resolved "http://localhost:4873/keyv/-/keyv-3.1.0.tgz#ecc228486f69991e49e9476485a5be1e8fc5c4d9"
+  integrity sha512-9ykJ/46SN/9KPM/sichzQ7OvXyGDYKGTaDlKMGCAlg2UK8KRy4jb0d8sFc+0Tt0YYnThq8X2RZgCg74RPxgcVA==
+  dependencies:
+    json-buffer "3.0.0"
+
 killable@^1.0.1:
   version "1.0.1"
   resolved "http://localhost:4873/killable/-/killable-1.0.1.tgz#4c8ce441187a061c7474fb87ca08e2a638194892"
@@ -8587,7 +9209,7 @@ kind-of@^5.0.0:
   resolved "http://localhost:4873/kind-of/-/kind-of-5.1.0.tgz#729c91e2d857b7a419a1f9aa65685c4c33f5845d"
   integrity sha512-NGEErnH6F2vUuXDh+OlbcKW7/wOcfdRHaZ7VWtqCztfHri/++YKmP51OdWeGPuqCOba6kk2OTe5d02VmTB80Pw==
 
-kind-of@^6.0.0, kind-of@^6.0.2:
+kind-of@^6.0.0, kind-of@^6.0.1, kind-of@^6.0.2:
   version "6.0.2"
   resolved "http://localhost:4873/kind-of/-/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
   integrity sha512-s5kLOcnH0XqDO+FvuaLX8DDjZ18CGFk7VygH40QoKPUQhW4e2rvM0rwUq0t8IQDOwYSeLK01U90OjzBTme2QqA==
@@ -8607,7 +9229,7 @@ last-call-webpack-plugin@^3.0.0:
     lodash "^4.17.5"
     webpack-sources "^1.1.0"
 
-latency-monitor@^0.2.1:
+latency-monitor@^0.2.1, latency-monitor@~0.2.1:
   version "0.2.1"
   resolved "http://localhost:4873/latency-monitor/-/latency-monitor-0.2.1.tgz#4043d5f23de86e2bfcef6ced4a3b5b922e1dd7ed"
   integrity sha1-QEPV8j3obiv872ztSjtbki4d1+0=
@@ -8795,7 +9417,7 @@ levelup@^3.0.0:
     level-iterator-stream "~3.0.0"
     xtend "~4.0.0"
 
-leven@^2.0.0:
+leven@2.1.0, leven@^2.0.0:
   version "2.1.0"
   resolved "http://localhost:4873/leven/-/leven-2.1.0.tgz#c2e7a9f772094dee9d34202ae8acce4687875580"
   integrity sha1-wuep93IJTe6dNCAq6KzORoeHVYA=
@@ -8820,7 +9442,7 @@ libp2p-bootstrap@~0.9.3:
     peer-id "~0.12.2"
     peer-info "~0.15.1"
 
-libp2p-circuit@~0.3.4:
+libp2p-circuit@~0.3.4, libp2p-circuit@~0.3.6:
   version "0.3.6"
   resolved "http://localhost:4873/libp2p-circuit/-/libp2p-circuit-0.3.6.tgz#cab020526dba73dcde3a95c0d9334be0058368ab"
   integrity sha512-aeLAyQKIvWOxD5AWJ5M6z9XNUWerfBmUNQEEOoGDVW91PW95BrxqtOmaCXOXiMct7qpT4gz2RtAPES55dDwbIQ==
@@ -8846,6 +9468,14 @@ libp2p-connection-manager@~0.0.2:
   dependencies:
     debug "^3.1.0"
     latency-monitor "^0.2.1"
+
+libp2p-connection-manager@~0.1.0:
+  version "0.1.0"
+  resolved "http://localhost:4873/libp2p-connection-manager/-/libp2p-connection-manager-0.1.0.tgz#1807d8dcdb27619d69899a38c43f842f66b25652"
+  integrity sha512-Md5UERlkD+KUsdUQRJE+B+UBq/KwOTo650z8Bl0zEfKjfnv/yMeFhucnf14suYBnzIIdGsckYn66xbeki31BLw==
+  dependencies:
+    debug "^4.1.1"
+    latency-monitor "~0.2.1"
 
 libp2p-crypto-secp256k1@~0.3.0:
   version "0.3.0"
@@ -8881,7 +9511,7 @@ libp2p-crypto@~0.16.0, libp2p-crypto@~0.16.1:
     tweetnacl "^1.0.0"
     ursa-optional "~0.9.10"
 
-libp2p-floodsub@~0.15.1:
+libp2p-floodsub@~0.15.1, libp2p-floodsub@~0.15.8:
   version "0.15.8"
   resolved "http://localhost:4873/libp2p-floodsub/-/libp2p-floodsub-0.15.8.tgz#ecfd94162825ed7b5431ccbe672f5bf58f7efab2"
   integrity sha512-tsRTRRz9vg3iPqhSgkn4gotX635Hp/VMxPd4VQZlRvO8pZsfZwd61Qn9Vx8bES881RhRX0YpGM4Sa0izInHEWA==
@@ -8898,7 +9528,7 @@ libp2p-floodsub@~0.15.1:
     pull-stream "^3.6.9"
     time-cache "~0.3.0"
 
-libp2p-identify@~0.7.5:
+libp2p-identify@~0.7.5, libp2p-identify@~0.7.6:
   version "0.7.6"
   resolved "http://localhost:4873/libp2p-identify/-/libp2p-identify-0.7.6.tgz#b17fad2ec0df76d6ca6b5b0a7e58b04620b8dbe9"
   integrity sha512-QleYqI6f8ah6G6sQU9uaIa9FVOtyp6LtiqopfjrmAIO5Oz22Zw+dpT7FcEXvYP7kL036Es2vzZm0js0pOWw1MA==
@@ -8909,6 +9539,36 @@ libp2p-identify@~0.7.5:
     protons "^1.0.1"
     pull-length-prefixed "^1.3.1"
     pull-stream "^3.6.9"
+
+libp2p-kad-dht@~0.14.12:
+  version "0.14.13"
+  resolved "http://localhost:4873/libp2p-kad-dht/-/libp2p-kad-dht-0.14.13.tgz#0acd38afa2211331850e14799786579f1c4525af"
+  integrity sha512-mbR9m31m9/Ru1baraguDVEhGEt+OFy8kHGZVaULbTzLJNB53C05IW6NzzgC/v5d05fFFwnqDA9b1FYhGjr2gow==
+  dependencies:
+    abort-controller "^3.0.0"
+    async "^2.6.2"
+    base32.js "~0.1.0"
+    chai-checkmark "^1.0.1"
+    cids "~0.6.0"
+    debug "^4.1.1"
+    err-code "^1.1.2"
+    hashlru "^2.3.0"
+    heap "~0.2.6"
+    interface-datastore "~0.6.0"
+    k-bucket "^5.0.0"
+    libp2p-crypto "~0.16.1"
+    libp2p-record "~0.6.2"
+    merge-options "^1.0.1"
+    multihashes "~0.4.14"
+    multihashing-async "~0.5.2"
+    peer-id "~0.12.2"
+    peer-info "~0.15.1"
+    priorityqueue "~0.2.1"
+    protons "^1.0.1"
+    pull-length-prefixed "^1.3.2"
+    pull-stream "^3.6.9"
+    varint "^5.0.0"
+    xor-distance "^2.0.0"
 
 libp2p-kad-dht@~0.14.4:
   version "0.14.12"
@@ -8952,6 +9612,19 @@ libp2p-keychain@~0.3.3:
     pull-stream "^3.6.8"
     sanitize-filename "^1.6.1"
 
+libp2p-keychain@~0.4.1:
+  version "0.4.1"
+  resolved "http://localhost:4873/libp2p-keychain/-/libp2p-keychain-0.4.1.tgz#d721709e7346481ee99bf2e337e7f51fbeae8e89"
+  integrity sha512-ZEEIBICSkWqbJEs3hAr/gAGjkoQb/H0VpJnK34w1xAyiTL+uZEAFmQUM6XaMMpuwZk4S+J3rbWXfVEGEYs94Pw==
+  dependencies:
+    async "^2.6.1"
+    interface-datastore "~0.6.0"
+    libp2p-crypto "~0.16.1"
+    merge-options "^1.0.1"
+    node-forge "~0.7.6"
+    pull-stream "^3.6.8"
+    sanitize-filename "^1.6.1"
+
 libp2p-mdns@~0.12.0:
   version "0.12.2"
   resolved "http://localhost:4873/libp2p-mdns/-/libp2p-mdns-0.12.2.tgz#7087c0c69c70b15d1feef97d221c68864d39ef04"
@@ -8981,7 +9654,7 @@ libp2p-mplex@~0.8.4:
     stream-to-pull-stream "^1.7.2"
     varint "^5.0.0"
 
-libp2p-ping@~0.8.3:
+libp2p-ping@~0.8.3, libp2p-ping@~0.8.5:
   version "0.8.5"
   resolved "http://localhost:4873/libp2p-ping/-/libp2p-ping-0.8.5.tgz#e7fb9fb32d9ff0d6b51be52caef4395ce1a17613"
   integrity sha512-BzCN3+jp1SvJQZlXq2G3TMkyK5UOOf3JO+CZMnaUEHYlRgQf2zShYta5XU2IGx0EJA/23iCdCL+LjBP/DOvbkQ==
@@ -9051,6 +9724,30 @@ libp2p-switch@~0.41.3:
     libp2p-identify "~0.7.5"
     moving-average "^1.0.0"
     multiaddr "^6.0.4"
+    multistream-select "~0.14.4"
+    once "^1.4.0"
+    peer-id "~0.12.2"
+    peer-info "~0.15.1"
+    pull-stream "^3.6.9"
+    retimer "^2.0.0"
+
+libp2p-switch@~0.42.9:
+  version "0.42.10"
+  resolved "http://localhost:4873/libp2p-switch/-/libp2p-switch-0.42.10.tgz#71adfd6a3348dbfe20f5d104696ea8d2120d4c0e"
+  integrity sha512-C8QOMIoEM/GSSKzvynBdo5kvIcTWzaHkduySVIRDjlJc9jUmIjyVOrQ0XPNB82UM7GCNj5hzPcHDDQjjFEi8fQ==
+  dependencies:
+    async "^2.6.2"
+    bignumber.js "^8.1.1"
+    class-is "^1.1.0"
+    debug "^4.1.1"
+    err-code "^1.1.2"
+    fsm-event "^2.1.0"
+    hashlru "^2.3.0"
+    interface-connection "~0.3.3"
+    libp2p-circuit "~0.3.6"
+    libp2p-identify "~0.7.6"
+    moving-average "^1.0.0"
+    multiaddr "^6.0.6"
     multistream-select "~0.14.4"
     once "^1.4.0"
     peer-id "~0.12.2"
@@ -9131,7 +9828,7 @@ libp2p-websocket-star@~0.10.2:
     socket.io-client "^2.1.1"
     socket.io-pull-stream "~0.1.5"
 
-libp2p-websockets@~0.12.0:
+libp2p-websockets@~0.12.0, libp2p-websockets@~0.12.2:
   version "0.12.2"
   resolved "http://localhost:4873/libp2p-websockets/-/libp2p-websockets-0.12.2.tgz#eecf25564cbe6b0e9017bb411c2a8abec8c9f29b"
   integrity sha512-K/Jg/fWFfP5NyiLx01EJcoAcYQO00RSHpZfPQDR3May6ABvOseAjq45SrUDdDCW5mCS0502Vz1VjRrZdOXw8zQ==
@@ -9164,6 +9861,28 @@ libp2p@~0.24.1:
     peer-book "~0.9.0"
     peer-id "~0.12.0"
     peer-info "~0.15.0"
+
+libp2p@~0.25.0:
+  version "0.25.2"
+  resolved "http://localhost:4873/libp2p/-/libp2p-0.25.2.tgz#9dacc888973f2bb8c67c7338e778a6a1c132a0e6"
+  integrity sha512-P64H8ukhm8YqGj3YF9hBgADWbbHvWoG3ZAgR6LeWXONPaekXvPkrvUMTrr5uLoeY3VL5YIkeS7hSI+AMyl6/hg==
+  dependencies:
+    async "^2.6.2"
+    debug "^4.1.1"
+    err-code "^1.1.2"
+    fsm-event "^2.1.0"
+    libp2p-connection-manager "~0.1.0"
+    libp2p-floodsub "~0.15.8"
+    libp2p-ping "~0.8.5"
+    libp2p-switch "~0.42.9"
+    libp2p-websockets "~0.12.2"
+    mafmt "^6.0.7"
+    multiaddr "^6.0.6"
+    once "^1.4.0"
+    peer-book "~0.9.1"
+    peer-id "~0.12.2"
+    peer-info "~0.15.1"
+    superstruct "~0.6.0"
 
 lint-staged@^8.1.5:
   version "8.1.5"
@@ -9556,7 +10275,7 @@ lowercase-keys@1.0.0:
   resolved "http://localhost:4873/lowercase-keys/-/lowercase-keys-1.0.0.tgz#4e3366b39e7f5457e35f1324bdf6f88d0bfc7306"
   integrity sha1-TjNms55/VFfjXxMkvfb4jQv8cwY=
 
-lowercase-keys@^1.0.0:
+lowercase-keys@^1.0.0, lowercase-keys@^1.0.1:
   version "1.0.1"
   resolved "http://localhost:4873/lowercase-keys/-/lowercase-keys-1.0.1.tgz#6f9e30b47084d971a7c820ff15a6c5167b74c26f"
   integrity sha512-G2Lj61tXDnVFFOi8VZds+SoQjtQC3dgokKdDG2mTm1tx4m50NUHBOZSBwQQHyy0V12A0JTG4icfZQH+xPyh8VA==
@@ -9973,7 +10692,7 @@ mimic-fn@^2.0.0:
   resolved "http://localhost:4873/mimic-fn/-/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
   integrity sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
 
-mimic-response@^1.0.0:
+mimic-response@^1.0.0, mimic-response@^1.0.1:
   version "1.0.1"
   resolved "http://localhost:4873/mimic-response/-/mimic-response-1.0.1.tgz#4923538878eef42063cb8a3e3b0798781487ab1b"
   integrity sha512-j5EctnkH7amfV/q5Hgmoal1g2QHFJRraOtmx0JpIqkxhBhI/lJSl1nMpQ45hVarwNETOoWEimndZ4QK0RHxuxQ==
@@ -9984,6 +10703,14 @@ mimos@3.x.x:
   integrity sha1-uRCQcq03jCty9qAQHEPd+ys2ZB8=
   dependencies:
     hoek "4.x.x"
+    mime-db "1.x.x"
+
+mimos@4.x.x:
+  version "4.0.2"
+  resolved "http://localhost:4873/mimos/-/mimos-4.0.2.tgz#f2762d7c60118ce51c2231afa090bc335d21d0f8"
+  integrity sha512-5XBsDqBqzSN88XPPH/TFpOalWOjHJM5Z2d3AMx/30iq+qXvYKd/8MPhqBwZDOLtoaIWInR3nLzMQcxfGK9djXA==
+  dependencies:
+    hoek "6.x.x"
     mime-db "1.x.x"
 
 min-document@^2.19.0:
@@ -10085,6 +10812,14 @@ mixin-deep@^1.2.0:
     for-in "^1.0.2"
     is-extendable "^1.0.1"
 
+mixin-object@^2.0.1:
+  version "2.0.1"
+  resolved "http://localhost:4873/mixin-object/-/mixin-object-2.0.1.tgz#4fb949441dab182540f1fe035ba60e1947a5e57e"
+  integrity sha1-T7lJRB2rGCVA8f4DW6YOGUel5X4=
+  dependencies:
+    for-in "^0.1.3"
+    is-extendable "^0.1.1"
+
 mkdirp@0.5.1, mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@~0.5.1:
   version "0.5.1"
   resolved "http://localhost:4873/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
@@ -10139,6 +10874,11 @@ mozjpeg@^6.0.0:
     bin-build "^3.0.0"
     bin-wrapper "^4.0.0"
     logalot "^2.1.0"
+
+mri@1.1.4:
+  version "1.1.4"
+  resolved "http://localhost:4873/mri/-/mri-1.1.4.tgz#7cb1dd1b9b40905f1fac053abe25b6720f44744a"
+  integrity sha512-6y7IjGPm8AzlvoUrwAaw1tLnUBudaS3752vcd8JtrpGGQn+rXIe63LFVHm/YMwtqAuh+LJPCFdlLYPWM1nYn6w==
 
 ms@2.0.0:
   version "2.0.0"
@@ -10363,7 +11103,7 @@ ndjson@^1.5.0:
     split2 "^2.1.0"
     through2 "^2.0.3"
 
-ndjson@hugomrdias/ndjson#feat/readable-stream3:
+"ndjson@github:hugomrdias/ndjson#feat/readable-stream3", ndjson@hugomrdias/ndjson#feat/readable-stream3:
   version "1.5.0"
   resolved "https://codeload.github.com/hugomrdias/ndjson/tar.gz/4db16da6b42e5b39bf300c3a7cde62abb3fa3a11"
   dependencies:
@@ -10371,6 +11111,16 @@ ndjson@hugomrdias/ndjson#feat/readable-stream3:
     minimist "^1.2.0"
     split2 "^3.1.0"
     through2 "^3.0.0"
+
+"neat-frame@git+https://github.com/agentofuser/neat-frame.git#wrap-ansi-options":
+  version "1.0.2"
+  resolved "git+https://github.com/agentofuser/neat-frame.git#b244ca11078bd35f63b2d7cb22d5e4b5c12ae2aa"
+  dependencies:
+    inspect-with-kind "^1.0.5"
+    merge-options "^1.0.1"
+    string-width "^2.1.1"
+    term-size "^1.2.0"
+    wrap-ansi "^4.0.0"
 
 needle@^2.2.1:
   version "2.3.0"
@@ -10408,6 +11158,14 @@ nigel@2.x.x:
   dependencies:
     hoek "4.x.x"
     vise "2.x.x"
+
+nigel@3.x.x:
+  version "3.0.4"
+  resolved "http://localhost:4873/nigel/-/nigel-3.0.4.tgz#edcd82f2e9387fe34ba21e3127ae4891547c7945"
+  integrity sha512-3SZCCS/duVDGxFpTROHEieC+itDo4UqL9JNUyQJv3rljudQbK6aqus5B4470OxhESPJLN93Qqxg16rH7DUjbfQ==
+  dependencies:
+    hoek "6.x.x"
+    vise "3.x.x"
 
 nlcst-to-string@^2.0.0:
   version "2.0.2"
@@ -10599,7 +11357,7 @@ normalize-url@2.0.1:
     query-string "^5.0.1"
     sort-keys "^2.0.0"
 
-normalize-url@^3.0.0:
+normalize-url@^3.0.0, normalize-url@^3.1.0:
   version "3.3.0"
   resolved "http://localhost:4873/normalize-url/-/normalize-url-3.3.0.tgz#b2e1c4dc4f7c6d57743df733a4f5978d18650559"
   integrity sha512-U+JJi7duF1o+u2pynbp2zXDW2/PADgC30f0GsHZtRh+HOcXHnw137TrNlyxxRvWW5fjKd3bcLHPxofWuCjaeZg==
@@ -10837,6 +11595,13 @@ onetime@^2.0.0:
   dependencies:
     mimic-fn "^1.0.0"
 
+open@^6.1.0:
+  version "6.1.0"
+  resolved "http://localhost:4873/open/-/open-6.1.0.tgz#0e7e671b883976a4e5251b5d1ca905ab6f4be78f"
+  integrity sha512-Vqch7NFb/WsMujhqfq+B3u0xkssRjZlxh+NSsBSphpcgaFD7gfB0SUBfR91E9ygBlyNGNogXR2cUB8rRfoo2kQ==
+  dependencies:
+    is-wsl "^1.1.0"
+
 opentracing@^0.14.3:
   version "0.14.3"
   resolved "http://localhost:4873/opentracing/-/opentracing-0.14.3.tgz#23e3ad029fa66a653926adbe57e834469f8550aa"
@@ -10893,7 +11658,7 @@ options@>=0.0.5:
   resolved "http://localhost:4873/options/-/options-0.0.6.tgz#ec22d312806bb53e731773e7cdaefcf1c643128f"
   integrity sha1-7CLTEoBrtT5zF3Pnza788cZDEo8=
 
-ora@^3.2.0:
+ora@^3.2.0, ora@^3.4.0:
   version "3.4.0"
   resolved "http://localhost:4873/ora/-/ora-3.4.0.tgz#bf0752491059a3ef3ed4c85097531de9fdbcd318"
   integrity sha512-eNwHudNbO1folBP3JsZ19v9azXWtQZjICdr3Q0TDPIaeBQ3mXLrh54wM+er0+hSp+dWKf+Z8KM58CYzEyIYxYg==
@@ -10976,6 +11741,11 @@ p-cancelable@^0.4.0:
   version "0.4.1"
   resolved "http://localhost:4873/p-cancelable/-/p-cancelable-0.4.1.tgz#35f363d67d52081c8d9585e37bcceb7e0bbcb2a0"
   integrity sha512-HNa1A8LvB1kie7cERyy21VNeHb2CWJJYqyyC2o3klWFfMGlFmWv2Z7sFgZH8ZiaYL95ydToKTFVXgMV/Os0bBQ==
+
+p-cancelable@^1.0.0:
+  version "1.1.0"
+  resolved "http://localhost:4873/p-cancelable/-/p-cancelable-1.1.0.tgz#d078d15a3af409220c886f1d9a0ca2e441ab26cc"
+  integrity sha512-s73XxOZ4zpt1edZYZzvhqFa6uvQc1vwUa0K0BdtIZgQMAJj9IbebH+JkgKZc9h+B05PKHLOTl4ajG1BmNrVZlw==
 
 p-defer@^1.0.0:
   version "1.0.0"
@@ -11368,7 +12138,7 @@ pbkdf2@^3.0.3:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-peer-book@~0.9.0:
+peer-book@~0.9.0, peer-book@~0.9.1:
   version "0.9.1"
   resolved "http://localhost:4873/peer-book/-/peer-book-0.9.1.tgz#42dffd7b1faf263bd6abe2907a26f7411f4dbf34"
   integrity sha512-Bnhsrruilysw5nFU0V2hcTmLnT2cRfc6mud62aaG1dkh9J8IkQ83IclcC2ziVPnEi8AFX8SQ1sSG7Qe0JTwIBA==
@@ -11425,6 +12195,17 @@ pez@2.x.x:
     hoek "4.x.x"
     nigel "2.x.x"
 
+pez@4.x.x:
+  version "4.0.5"
+  resolved "http://localhost:4873/pez/-/pez-4.0.5.tgz#a975c49deff330d298d82851b39f81c2710556df"
+  integrity sha512-HvL8uiFIlkXbx/qw4B8jKDCWzo7Pnnd65Uvanf9OOCtb20MRcb9gtTVBf9NCnhETif1/nzbDHIjAWC/sUp7LIQ==
+  dependencies:
+    b64 "4.x.x"
+    boom "7.x.x"
+    content "4.x.x"
+    hoek "6.x.x"
+    nigel "3.x.x"
+
 phin@^2.9.1:
   version "2.9.3"
   resolved "http://localhost:4873/phin/-/phin-2.9.3.tgz#f9b6ac10a035636fb65dfc576aaaa17b8743125c"
@@ -11461,6 +12242,38 @@ pinkie@^2.0.0:
   version "2.0.4"
   resolved "http://localhost:4873/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
   integrity sha1-clVrgM+g1IqXToDnckjoDtT3+HA=
+
+pino-pretty@^2.5.0:
+  version "2.6.1"
+  resolved "http://localhost:4873/pino-pretty/-/pino-pretty-2.6.1.tgz#b5a8e28137deb1629428931d98c708b51f0e9555"
+  integrity sha512-e/CWtKLidqkr7sinfIVVcsfcHgnFVlGvuEfKuuPFnxBo+9dZZsmgF8a9Rj7SYJ5LMZ8YBxNY9Ca46eam4ajKtQ==
+  dependencies:
+    args "^5.0.0"
+    chalk "^2.3.2"
+    dateformat "^3.0.3"
+    fast-json-parse "^1.0.3"
+    fast-safe-stringify "^2.0.6"
+    jmespath "^0.15.0"
+    pump "^3.0.0"
+    readable-stream "^3.0.6"
+    split2 "^3.0.0"
+
+pino-std-serializers@^2.3.0:
+  version "2.4.0"
+  resolved "http://localhost:4873/pino-std-serializers/-/pino-std-serializers-2.4.0.tgz#c0588b5ab0905ac55bae2cb61639ed93153681fb"
+  integrity sha512-ysT2ylXu1aEec9k8cm/lz7emBcfpdxFWHqvHeGXf1wvfw7TKPMGhLWwS+ciHw6u4ffnmV+pkAMF4MUIZmZZdSg==
+
+pino@^5.10.1:
+  version "5.12.2"
+  resolved "http://localhost:4873/pino/-/pino-5.12.2.tgz#e9f43d918d455684280a6015254c5ad96a91f278"
+  integrity sha512-EunVRDkw/eQzgAudJiZuqzEQ20hDezixLRLrdxUMBzavvt5ot3vep7K8swRvXSgj2bKtbOmoHnrRMtYzRjfITQ==
+  dependencies:
+    fast-redact "^1.4.4"
+    fast-safe-stringify "^2.0.6"
+    flatstr "^1.0.9"
+    pino-std-serializers "^2.3.0"
+    quick-format-unescaped "^3.0.2"
+    sonic-boom "^0.7.3"
 
 pixelmatch@^4.0.0:
   version "4.0.2"
@@ -11527,6 +12340,14 @@ podium@1.x.x:
     hoek "4.x.x"
     items "2.x.x"
     joi "10.x.x"
+
+podium@3.x.x:
+  version "3.2.0"
+  resolved "http://localhost:4873/podium/-/podium-3.2.0.tgz#2a7c579ddd5408f412d014c9ffac080c41d83477"
+  integrity sha512-rbwvxwVkI6gRRlxZQ1zUeafrpGxZ7QPHIheinehAvGATvGIPfWRkaTeWedc5P4YjXJXEV8ZbBxPtglNylF9hjw==
+  dependencies:
+    hoek "6.x.x"
+    joi "14.x.x"
 
 portfinder@^1.0.20:
   version "1.0.20"
@@ -12187,6 +13008,15 @@ public-encrypt@^4.0.0:
     randombytes "^2.0.1"
     safe-buffer "^5.1.2"
 
+public-ip@^3.0.0:
+  version "3.0.0"
+  resolved "http://localhost:4873/public-ip/-/public-ip-3.0.0.tgz#f5bf64f4c859d11ed4c19e465a99bb9c84e2388f"
+  integrity sha512-aRf7UteqGRj23BRHlavRL9hfcCKxOB3bkraRW0Wg8kPvNFsOD3Q/QPLwXLMEuln2WYKXial/XNGTp5utIIY+FA==
+  dependencies:
+    dns-socket "^4.1.1"
+    got "^9.4.0"
+    is-ip "^2.0.0"
+
 pull-abortable@^4.1.1:
   version "4.1.1"
   resolved "http://localhost:4873/pull-abortable/-/pull-abortable-4.1.1.tgz#b3ad5aefb4116b25916d26db89393ac98d0dcea1"
@@ -12231,7 +13061,7 @@ pull-handshake@^1.1.4:
     pull-pushable "^2.0.0"
     pull-reader "^1.2.3"
 
-pull-length-prefixed@^1.3.1:
+pull-length-prefixed@^1.3.1, pull-length-prefixed@^1.3.2:
   version "1.3.2"
   resolved "http://localhost:4873/pull-length-prefixed/-/pull-length-prefixed-1.3.2.tgz#041f50771188abda68999825b3354d919fc016fc"
   integrity sha512-eHSUxrDNgdbZnfj+96UiG2R8pGmStQ0dW9IuQoUBCCVlC3rIlhUCvv8LJv+FZIQy7ys1LANqUmWmLYqiFxJC+g==
@@ -12470,6 +13300,11 @@ querystringify@^2.0.0:
   version "2.1.1"
   resolved "http://localhost:4873/querystringify/-/querystringify-2.1.1.tgz#60e5a5fd64a7f8bfa4d2ab2ed6fdf4c85bad154e"
   integrity sha512-w7fLxIRCRT7U8Qu53jQnJyPkYZIaR4n5151KMfcJlO/A9397Wxb1amJvROTK6TOnp7PfoAmg/qXiNHI+08jRfA==
+
+quick-format-unescaped@^3.0.2:
+  version "3.0.2"
+  resolved "http://localhost:4873/quick-format-unescaped/-/quick-format-unescaped-3.0.2.tgz#0137e94d8fb37ffeb70040535111c378e75396fb"
+  integrity sha512-FXTaCkwvpIlkdKeGDNgcq07SXWS383noQUuZjvdE1QcTt+eLuqof6/BDiEPqB59FWLie/l91+HtlJSw7iCViSA==
 
 rabin@^1.6.0:
   version "1.6.0"
@@ -13095,7 +13930,7 @@ resolve@^1.10.0, resolve@^1.3.2, resolve@^1.5.0, resolve@^1.8.1, resolve@^1.9.0:
   dependencies:
     path-parse "^1.0.6"
 
-responselike@1.0.2:
+responselike@1.0.2, responselike@^1.0.2:
   version "1.0.2"
   resolved "http://localhost:4873/responselike/-/responselike-1.0.2.tgz#918720ef3b631c5642be068f15ade5a46f4ba1e7"
   integrity sha1-kYcg7ztjHFZCvgaPFa3lpG9Loec=
@@ -13561,6 +14396,15 @@ sha.js@^2.4.0, sha.js@^2.4.8:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
+shallow-clone@^1.0.0:
+  version "1.0.0"
+  resolved "http://localhost:4873/shallow-clone/-/shallow-clone-1.0.0.tgz#4480cd06e882ef68b2ad88a3ea54832e2c48b571"
+  integrity sha512-oeXreoKR/SyNJtRJMAKPDSvd28OqEwG4eR/xc856cRGBII7gX9lvAqDxusPm0846z/w/hWYjI1NpKwJ00NHzRA==
+  dependencies:
+    is-extendable "^0.1.1"
+    kind-of "^5.0.0"
+    mixin-object "^2.0.1"
+
 shallow-compare@^1.2.2:
   version "1.2.2"
   resolved "http://localhost:4873/shallow-compare/-/shallow-compare-1.2.2.tgz#fa4794627bf455a47c4f56881d8a6132d581ffdb"
@@ -13624,6 +14468,14 @@ shot@3.x.x:
   dependencies:
     hoek "4.x.x"
     joi "10.x.x"
+
+shot@4.x.x:
+  version "4.0.7"
+  resolved "http://localhost:4873/shot/-/shot-4.0.7.tgz#b05d2858634fedc18ece99e8f638fab7c9f9d4c4"
+  integrity sha512-RKaKAGKxJ11EjJl0cf2fYVSsd4KB5Cncb9J0v7w+0iIaXpxNqFWTYNDNhBX7f0XSyDrjOH9a4OWZ9Gp/ZML+ew==
+  dependencies:
+    hoek "6.x.x"
+    joi "14.x.x"
 
 should-proxy@^1.0.4:
   version "1.0.4"
@@ -13724,7 +14576,7 @@ slice-ansi@^2.1.0:
     astral-regex "^1.0.0"
     is-fullwidth-code-point "^2.0.0"
 
-smart-buffer@^4.0.0:
+smart-buffer@^4.0.0, smart-buffer@^4.0.2:
   version "4.0.2"
   resolved "http://localhost:4873/smart-buffer/-/smart-buffer-4.0.2.tgz#5207858c3815cc69110703c6b94e46c15634395d"
   integrity sha512-JDhEpTKzXusOqXZ0BUIdH+CjFdO/CR3tLlf5CN34IypI+xMmXW1uB16OOY8z3cICbJlDAVJzNbwBhNO0wt9OAw==
@@ -13853,6 +14705,21 @@ somever@1.x.x:
   integrity sha512-PCDMBcega4n7wuBUKmkiXidF3cOwtHHGg2qJYl0Rkw7StZqORoCgqce7HUuWNta/NAiQhwLDezNnTANxEWPCGA==
   dependencies:
     hoek "4.x.x"
+
+somever@2.x.x:
+  version "2.0.0"
+  resolved "http://localhost:4873/somever/-/somever-2.0.0.tgz#7bdbed3bee8ece2c7c8a2e7d9a1c022bd98d6c89"
+  integrity sha512-9JaIPP+HxwYGqCDqqK3tRaTqdtQHoK6Qy3IrXhIt2q5x8fs8RcfU7BMWlFTCOgFazK8p88zIv1tHQXvAwtXMyw==
+  dependencies:
+    bounce "1.x.x"
+    hoek "6.x.x"
+
+sonic-boom@^0.7.3:
+  version "0.7.3"
+  resolved "http://localhost:4873/sonic-boom/-/sonic-boom-0.7.3.tgz#cbfc18e87c2b8078b00e38ad9475c05fce5ea696"
+  integrity sha512-A9EyoIeLD+g9vMLYQKjNCatJtAKdBQMW03+L8ZWWX/A6hq+srRCwdqHrBD1R8oSMLXov3oHN13dljtZf12q2Ow==
+  dependencies:
+    flatstr "^1.0.9"
 
 sort-keys-length@^1.0.0:
   version "1.0.1"
@@ -13994,7 +14861,7 @@ split2@^2.1.0:
   dependencies:
     through2 "^2.0.2"
 
-split2@^3.1.0:
+split2@^3.0.0, split2@^3.1.0:
   version "3.1.1"
   resolved "http://localhost:4873/split2/-/split2-3.1.1.tgz#c51f18f3e06a8c4469aaab487687d8d956160bb6"
   integrity sha512-emNzr1s7ruq4N+1993yht631/JH+jaj0NYBosuKmLcq+JkGQ9MmTw1RB1fGaTCzUuseRIClrlSLHRNYGwWQ58Q==
@@ -14105,6 +14972,19 @@ statehood@5.x.x:
     items "2.x.x"
     joi "12.x.x"
 
+statehood@6.x.x:
+  version "6.0.9"
+  resolved "http://localhost:4873/statehood/-/statehood-6.0.9.tgz#b347ae19818aec7fc26645fe1ec6a61928a57a3c"
+  integrity sha512-jbFg1+MYEqfC7ABAoWZoeF4cQUtp3LUvMDUGExL76cMmleBHG7I6xlZFsE8hRi7nEySIvutHmVlLmBe9+2R5LQ==
+  dependencies:
+    boom "7.x.x"
+    bounce "1.x.x"
+    bourne "1.x.x"
+    cryptiles "4.x.x"
+    hoek "6.x.x"
+    iron "5.x.x"
+    joi "14.x.x"
+
 static-extend@^0.1.1:
   version "0.1.2"
   resolved "http://localhost:4873/static-extend/-/static-extend-0.1.2.tgz#60809c39cbff55337226fd5e0b520f341f1fb5c6"
@@ -14186,7 +15066,7 @@ stream-to-buffer@^0.1.0:
   dependencies:
     stream-to "~0.2.0"
 
-stream-to-pull-stream@^1.7.2:
+stream-to-pull-stream@^1.7.2, stream-to-pull-stream@^1.7.3:
   version "1.7.3"
   resolved "http://localhost:4873/stream-to-pull-stream/-/stream-to-pull-stream-1.7.3.tgz#4161aa2d2eb9964de60bfa1af7feaf917e874ece"
   integrity sha512-6sNyqJpr5dIOQdgNy/xcDWwDuzAsAwVzhzrWlAPAQ7Lkjx/rv0wgvxEyKwTq6FmNd5rjTrELt/CLmaSw7crMGg==
@@ -14208,6 +15088,11 @@ streamsearch@0.1.2:
   version "0.1.2"
   resolved "http://localhost:4873/streamsearch/-/streamsearch-0.1.2.tgz#808b9d0e56fc273d809ba57338e929919a1a9f1a"
   integrity sha1-gIudDlb8Jz2Am6VzOOkpkZoanxo=
+
+strftime@~0.10.0:
+  version "0.10.0"
+  resolved "http://localhost:4873/strftime/-/strftime-0.10.0.tgz#b3f0fa419295202a5a289f6d6be9f4909a617193"
+  integrity sha1-s/D6QZKVICpaKJ9ta+n0kJphcZM=
 
 strict-uri-encode@^1.0.0:
   version "1.1.0"
@@ -14415,6 +15300,18 @@ subtext@5.x.x:
     pez "2.x.x"
     wreck "12.x.x"
 
+subtext@6.x.x:
+  version "6.0.12"
+  resolved "http://localhost:4873/subtext/-/subtext-6.0.12.tgz#ac09be3eac1eca3396933adeadd65fc781f64fc1"
+  integrity sha512-yT1wCDWVgqvL9BIkWzWqgj5spUSYo/Enu09iUV8t2ZvHcr2tKGTGg2kc9tUpVEsdhp1ihsZeTAiDqh0TQciTPQ==
+  dependencies:
+    boom "7.x.x"
+    bourne "1.x.x"
+    content "4.x.x"
+    hoek "6.x.x"
+    pez "4.x.x"
+    wreck "14.x.x"
+
 superagent@^4.0.0-beta.5:
   version "4.1.0"
   resolved "http://localhost:4873/superagent/-/superagent-4.1.0.tgz#c465c2de41df2b8d05c165cbe403e280790cdfd5"
@@ -14429,6 +15326,14 @@ superagent@^4.0.0-beta.5:
     mime "^2.4.0"
     qs "^6.6.0"
     readable-stream "^3.0.6"
+
+superstruct@~0.6.0:
+  version "0.6.1"
+  resolved "http://localhost:4873/superstruct/-/superstruct-0.6.1.tgz#148fc3d627bb59fcfe24aa1bd2a1b8c51b1db072"
+  integrity sha512-LDbOKL5sNbOJ00Q36iYRhSexKIptZje0/mhNznnz04wT9CmsPDZg/K/UV1dgYuCwNMuOBHTbVROZsGB9EhhK4w==
+  dependencies:
+    clone-deep "^2.0.1"
+    kind-of "^6.0.1"
 
 supports-color@^2.0.0:
   version "2.0.0"
@@ -14517,7 +15422,7 @@ tar-stream@^1.1.2, tar-stream@^1.5.2, tar-stream@^1.6.2:
     to-buffer "^1.1.1"
     xtend "^4.0.0"
 
-tar-stream@^2.0.1:
+tar-stream@^2.0.0, tar-stream@^2.0.1:
   version "2.0.1"
   resolved "http://localhost:4873/tar-stream/-/tar-stream-2.0.1.tgz#42fbe41cd1cc5e6657c813e7d98e7afca2858a8c"
   integrity sha512-I6OJF7wE62BC6zNPdHDtseK0D0187PBjbKSLYY4ffvVkBM6tyBn2O9plDvVM2229/mozfEL/X3++qSvYYQE2xw==
@@ -14547,6 +15452,11 @@ tdigest@^0.1.1:
   integrity sha1-Ljyyw56kSeVdHmzZEReszKRYgCE=
   dependencies:
     bintrees "1.0.1"
+
+teamwork@3.x.x:
+  version "3.2.0"
+  resolved "http://localhost:4873/teamwork/-/teamwork-3.2.0.tgz#27916edab815459c1a4686252eb18fb5925f49fa"
+  integrity sha512-xAmJ8PIVjRZMXAHgUuOP8ITsv0SedyWAit2UWiNImXgg/F+BxrsG46ZegElNBM0Dwp+iMfbigg/Ll/M2oDRYww==
 
 temp-dir@^1.0.0:
   version "1.0.0"
@@ -14729,6 +15639,11 @@ to-object-path@^0.3.0:
   dependencies:
     kind-of "^3.0.2"
 
+to-readable-stream@^1.0.0:
+  version "1.0.0"
+  resolved "http://localhost:4873/to-readable-stream/-/to-readable-stream-1.0.0.tgz#ce0aa0c2f3df6adf852efb404a783e77c0475771"
+  integrity sha512-Iq25XBt6zD5npPhlLVXGFN3/gyR2/qODcKNNyTMd4vbm39HUaOiAM4PMq0eMVC/Tkxz+Zjdsc55g9yyz+Yq00Q==
+
 to-regex-range@^2.1.0:
   version "2.1.1"
   resolved "http://localhost:4873/to-regex-range/-/to-regex-range-2.1.1.tgz#7c80c17b9dfebe599e27367e0d4dd5590141db38"
@@ -14778,6 +15693,13 @@ tough-cookie@~2.4.3:
   dependencies:
     psl "^1.1.24"
     punycode "^1.4.1"
+
+trammel@^2.1.0:
+  version "2.1.0"
+  resolved "http://localhost:4873/trammel/-/trammel-2.1.0.tgz#ce6e788b8844780e39c6646302a246375b98f0e3"
+  integrity sha512-XIY3w8JUzkF8Uic+07ucS8Wm4bVNHyQRDHbMII3cX2I53bAwJYvGg6ntrViFQDkke4Ulf7ZgLdKlmwmCrFAYXA==
+  dependencies:
+    format-io "^1.0.1"
 
 traverse@~0.6.6:
   version "0.6.6"
@@ -15204,6 +16126,14 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
+uri-to-multiaddr@^3.0.1:
+  version "3.0.1"
+  resolved "http://localhost:4873/uri-to-multiaddr/-/uri-to-multiaddr-3.0.1.tgz#460bd5d78074002c47b60fdc456efd009e7168ae"
+  integrity sha512-77slJiNB/IxM35zgflBEgp8T8ywpyYAbEh8Ezdnq7kAuA6TRg6wfvNTi4Uixfh6CsPv9K2fAkI5+E4C2dw3tXA==
+  dependencies:
+    is-ip "^2.0.0"
+    multiaddr "^6.0.3"
+
 urix@^0.1.0:
   version "0.1.0"
   resolved "http://localhost:4873/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
@@ -15409,6 +16339,13 @@ vise@2.x.x:
   integrity sha1-awjo+0y3bjpQzW3Q7DczjoEaDTk=
   dependencies:
     hoek "4.x.x"
+
+vise@3.x.x:
+  version "3.0.2"
+  resolved "http://localhost:4873/vise/-/vise-3.0.2.tgz#9a8b7450f783aa776faa327fe47d7bfddb227266"
+  integrity sha512-X52VtdRQbSBXdjcazRiY3eRgV3vTQ0B+7Wh8uC9cVv7lKfML5m9+9NHlbcgCY0R9EAqD1v/v7o9mhGh2A3ANFg==
+  dependencies:
+    hoek "6.x.x"
 
 vm-browserify@0.0.4:
   version "0.0.4"
@@ -15678,6 +16615,15 @@ wrap-ansi@^3.0.1:
     string-width "^2.1.1"
     strip-ansi "^4.0.0"
 
+wrap-ansi@^4.0.0:
+  version "4.0.0"
+  resolved "http://localhost:4873/wrap-ansi/-/wrap-ansi-4.0.0.tgz#b3570d7c70156159a2d42be5cc942e957f7b1131"
+  integrity sha512-uMTsj9rDb0/7kk1PbcbCcwvHUxp60fGDB/NNXpVa0Q+ic/e7y5+BwTxKfQ33VYgDppSwi/FBzpetYzo8s6tfbg==
+  dependencies:
+    ansi-styles "^3.2.0"
+    string-width "^2.1.1"
+    strip-ansi "^4.0.0"
+
 wrappy@1:
   version "1.0.2"
   resolved "http://localhost:4873/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
@@ -15690,6 +16636,15 @@ wreck@12.x.x:
   dependencies:
     boom "5.x.x"
     hoek "4.x.x"
+
+wreck@14.x.x:
+  version "14.2.0"
+  resolved "http://localhost:4873/wreck/-/wreck-14.2.0.tgz#0064a5b930fc675f57830c1fd28342da1a70b0fc"
+  integrity sha512-NFFft3SMgqrJbXEVfYifh+QDWFxni+98/I7ut7rLbz3F0XOypluHsdo3mdEYssGSirMobM3fGlqhyikbWKDn2Q==
+  dependencies:
+    boom "7.x.x"
+    bourne "1.x.x"
+    hoek "6.x.x"
 
 write-file-atomic@^2.0.0:
   version "2.4.2"
@@ -15889,7 +16844,7 @@ yargs@12.0.5, yargs@^12.0.2, yargs@^12.0.5:
     y18n "^3.2.1 || ^4.0.0"
     yargs-parser "^11.1.1"
 
-yargs@^13.2.1:
+yargs@^13.2.1, yargs@^13.2.2:
   version "13.2.2"
   resolved "http://localhost:4873/yargs/-/yargs-13.2.2.tgz#0c101f580ae95cea7f39d927e7770e3fdc97f993"
   integrity sha512-WyEoxgyTD3w5XRpAQNYUB9ycVH/PQrToaTXdYXRdOXvEy1l19br+VJsc0vcO8PTGg5ro/l/GY7F/JMEBmI0BxA==

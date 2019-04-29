@@ -1,12 +1,11 @@
-import React from 'react'
 import { Link } from 'gatsby'
-
+import React from 'react'
 import { rhythm, scale } from '../utils/typography'
 
-const Layout = props => {
-  const { location, title, children } = props
+declare var __PATH_PREFIX__: string
+
+const Layout = ({ location, title, children }: any) => {
   // `__PATH_PREFIX__` is a Gatsby global
-  // eslint-disable-next-line
   const rootPath = `${__PATH_PREFIX__}/`
   let header
 

@@ -10,6 +10,7 @@ module.exports = {
     },
   },
   plugins: [
+    'gatsby-plugin-typescript',
     'gatsby-plugin-ipfs',
     {
       resolve: 'gatsby-source-filesystem',

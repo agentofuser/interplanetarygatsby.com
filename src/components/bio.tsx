@@ -5,10 +5,9 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 import Image from 'gatsby-image'
-
+import React from 'react'
 import { rhythm } from '../utils/typography'
 
 const bioQuery = graphql`

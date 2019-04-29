@@ -1,12 +1,11 @@
+import { graphql, Link } from 'gatsby'
 import React from 'react'
-import { Link, graphql } from 'gatsby'
-
 import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
 
-const BlogPostTemplate = props => {
+const BlogPostTemplate = (props: any) => {
   const post = props.data.markdownRemark
   const siteTitle = props.data.site.siteMetadata.title
   const { previous, next } = props.pageContext

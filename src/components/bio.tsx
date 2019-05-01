@@ -6,19 +6,11 @@
  */
 
 import { graphql, StaticQuery } from 'gatsby'
-import Image from 'gatsby-image'
 import React from 'react'
 import { rhythm } from '../utils/typography'
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
-      childImageSharp {
-        fixed(width: 50, height: 50) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
     site {
       siteMetadata {
         author
@@ -43,17 +35,14 @@ function Bio() {
               marginBottom: rhythm(2.5),
             }}
           >
-            <Image
-              fixed={data.avatar.childImageSharp.fixed}
+            <img
+              src="https://ipfs.io/ipfs/QmThuKNy7wU79vR7HCF3okQG491KAqJ1VeV7ErXGqGw8bz/static/84b40c3e3d12d1c851648bf738e1f420/c15d6/profile-pic.jpg"
               alt={author}
               style={{
                 marginRight: rhythm(1 / 2),
-                marginBottom: 0,
-                minWidth: 50,
-                borderRadius: '100%',
-              }}
-              imgStyle={{
                 borderRadius: '50%',
+                width: '50px',
+                height: '50px',
               }}
             />
             <p>

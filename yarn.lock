@@ -2,29 +2,28 @@
 # yarn lockfile v1
 
 
-"@agentofuser/ipfs-deploy@^7.0.1":
-  version "7.0.1"
-  resolved "http://localhost:4873/@agentofuser%2fipfs-deploy/-/ipfs-deploy-7.0.1.tgz#68ebb79e72e38d2cb5de1f56a2667e2bbb0d4aba"
-  integrity sha512-nLc2un/zc03R5Uqq0TsaxLAqgKv7gg4T0hk4cOvL/EIv1F576S54JFWY1nRWvF6t2Pz2ZKbXoxQk7SebCX1qIg==
+"@agentofuser/ipfs-deploy@^7.1.1":
+  version "7.1.1"
+  resolved "https://registry.npmjs.org/@agentofuser/ipfs-deploy/-/ipfs-deploy-7.1.1.tgz#c9e6c934a81d16537ab1b7e7868d771c57eecc5a"
+  integrity sha512-T7sBB1N1jfAAxT9RDWugonX1bTntIrePuFaK3snJPgVu4w1BuFJ91S6OPfnYoW8YyGQolhpXUMoTWFklc18ipQ==
   dependencies:
     "@pinata/sdk" "^1.0.18"
     byte-size "^5.0.1"
     chalk "^2.4.2"
     clipboardy "^2.0.0"
-    common-tags "^1.8.0"
+    common-tags "^2.0.0-alpha.1"
     dnslink-cloudflare "^2.0.1"
     dotenv "^7.0.0"
-    got "^9.6.0"
-    ipaddr.js "^1.9.0"
     ipfs "^0.35.0"
+    is-port-reachable "^2.0.1"
     json-stringify-safe "^5.0.1"
-    jsonify-error "^1.4.4"
+    jsonify-error "^1.4.5"
     lodash "^4.17.11"
-    multiaddr "^6.0.6"
     neat-frame "https://github.com/agentofuser/neat-frame#wrap-ansi-options"
-    open "^6.1.0"
+    open "^6.2.0"
     ora "^3.4.0"
-    public-ip "^3.0.0"
+    prettier "^1.17.0"
+    public-ip "^3.1.0"
     trammel "^2.1.0"
     yargs "^13.2.2"
 
@@ -3316,10 +3315,15 @@ commitizen@^3.1.1:
     strip-bom "3.0.0"
     strip-json-comments "2.0.1"
 
-common-tags@^1.4.0, common-tags@^1.8.0:
+common-tags@^1.4.0:
   version "1.8.0"
   resolved "http://localhost:4873/common-tags/-/common-tags-1.8.0.tgz#8e3153e542d4a39e9b10554434afaaf98956a937"
   integrity sha512-6P6g0uetGpW/sdyUy/iQQCbFF0kWVMSIVSyYz7Zgjcgh8mgw8PQzDNZeyZ5DQ2gM7LBoZPHmnjz8rUthkBG5tw==
+
+common-tags@^2.0.0-alpha.1:
+  version "2.0.0-alpha.1"
+  resolved "https://registry.npmjs.org/common-tags/-/common-tags-2.0.0-alpha.1.tgz#750095c5173e827937e492e045414ac4b3dd6638"
+  integrity sha512-PeOyjLntdPrJPXnEiPQ/G20BDPclgJbqAcrpYYY5FMN/Japk4Qbi82part+cBVQ7rtC3wdWbPuDbsUZCzcyzTg==
 
 commondir@^1.0.1:
   version "1.0.1"
@@ -4483,9 +4487,9 @@ dns-packet@^5.1.2:
   dependencies:
     ip "^1.1.5"
 
-dns-socket@^4.1.1:
+dns-socket@^4.2.0:
   version "4.2.0"
-  resolved "http://localhost:4873/dns-socket/-/dns-socket-4.2.0.tgz#92575505c4c18ac3ad241f4bb3ff4369761557e9"
+  resolved "https://registry.npmjs.org/dns-socket/-/dns-socket-4.2.0.tgz#92575505c4c18ac3ad241f4bb3ff4369761557e9"
   integrity sha512-4XuD3z28jht3jvHbiom6fAipgG5LkjYeDLrX5OH8cbl0AtzTyUUAxGckcW8T7z0pLfBBV5qOiuC4wUEohk6FrQ==
   dependencies:
     dns-packet "^5.1.2"
@@ -6785,7 +6789,7 @@ got@^8.3.1:
     url-parse-lax "^3.0.0"
     url-to-options "^1.0.1"
 
-got@^9.4.0, got@^9.6.0:
+got@^9.6.0:
   version "9.6.0"
   resolved "http://localhost:4873/got/-/got-9.6.0.tgz#edf45e7d67f99545705de1f7bbeeeb121765ed85"
   integrity sha512-R7eWptXuGYxwijs0eV+v3o6+XH1IqVK8dJOEecQfTmkncw9AV4dcw/Dhxi8MdlqPthxxpZyizMzyg8RTmEsG+Q==
@@ -7809,6 +7813,11 @@ ip-regex@^2.0.0, ip-regex@^2.1.0:
   resolved "http://localhost:4873/ip-regex/-/ip-regex-2.1.0.tgz#fa78bf5d2e6913c911ce9f819ee5146bb6d844e9"
   integrity sha1-+ni/XS5pE8kRzp+BnuUUa7bYROk=
 
+ip-regex@^4.0.0:
+  version "4.1.0"
+  resolved "https://registry.npmjs.org/ip-regex/-/ip-regex-4.1.0.tgz#5ad62f685a14edb421abebc2fff8db94df67b455"
+  integrity sha512-pKnZpbgCTfH/1NLIlOduP/V+WRXzC2MOz3Qo8xmxk8C5GudJLgK5QyLVXOSWy3ParAH7Eemurl3xjv/WXYFvMA==
+
 ip@^1.1.0, ip@^1.1.5:
   version "1.1.5"
   resolved "http://localhost:4873/ip/-/ip-1.1.5.tgz#bdded70114290828c0a039e72ef25f5aaec4354a"
@@ -8537,6 +8546,13 @@ is-ip@^2.0.0:
   dependencies:
     ip-regex "^2.0.0"
 
+is-ip@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/is-ip/-/is-ip-3.0.0.tgz#832e44ba199436ee4d57c23adb8c4061f7989875"
+  integrity sha512-Xj8foQ21HBtI+g3LD9vOtedlZ88oN7s2eEFNs5UIHPvkneOU96m1g+mFf6ph5SJjXXGLJNvWhel0XgoI9KpnVQ==
+  dependencies:
+    ip-regex "^4.0.0"
+
 is-ipfs@^0.6.0, is-ipfs@~0.6.0:
   version "0.6.0"
   resolved "http://localhost:4873/is-ipfs/-/is-ipfs-0.6.0.tgz#97e80f6fee09381042111721aeaf017a31df0fff"
@@ -8635,6 +8651,11 @@ is-png@^1.0.0:
   version "1.1.0"
   resolved "http://localhost:4873/is-png/-/is-png-1.1.0.tgz#d574b12bf275c0350455570b0e5b57ab062077ce"
   integrity sha1-1XSxK/J1wDUEVVcLDltXqwYgd84=
+
+is-port-reachable@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/is-port-reachable/-/is-port-reachable-2.0.1.tgz#e0778d0733beac1ade3ba72a5fe77db50a59926b"
+  integrity sha512-SqU55C5gkitgOhl2ccd2v23MbkbcOFa5e4aPo8h8VGqOifh7iDwG44bQBWGW/lZulTjl9AWIKP0NiUWpa+TtWA==
 
 is-promise@^2.1.0:
   version "2.1.0"
@@ -9063,12 +9084,13 @@ jsonfile@^4.0.0:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
-jsonify-error@^1.4.4:
-  version "1.4.4"
-  resolved "http://localhost:4873/jsonify-error/-/jsonify-error-1.4.4.tgz#539e91143939728b706b73a9f5b8a656968ea67e"
-  integrity sha512-N2Fd/mABN6SLOvR72CaYYQk5sPQ0vKQhZh1zMWCTUR2q/tzvatEORktben9jaHCfc4lVaA/GFgBJ7gvCan9CeQ==
+jsonify-error@^1.4.5:
+  version "1.4.5"
+  resolved "https://registry.npmjs.org/jsonify-error/-/jsonify-error-1.4.5.tgz#8df7fcc8f9881fa8d365d8e5e9eedee9b1744015"
+  integrity sha512-3UdC13a7l+C+9zE7/yA4kctejpvupDlNbpi2aFkAlLnhGLG+yzFEzqcPHpq5w0aygdctYfTVyoEmyfCUpz58xQ==
   dependencies:
     chalk "^2.4.1"
+    json-stringify-safe "^5.0.1"
 
 jsonify@~0.0.0:
   version "0.0.0"
@@ -11041,9 +11063,9 @@ ndjson@hugomrdias/ndjson#feat/readable-stream3:
     split2 "^3.1.0"
     through2 "^3.0.0"
 
-"neat-frame@https://github.com/agentofuser/neat-frame#wrap-ansi-options":
+"neat-frame@git+https://github.com/agentofuser/neat-frame.git#wrap-ansi-options":
   version "1.0.2"
-  resolved "https://github.com/agentofuser/neat-frame#b244ca11078bd35f63b2d7cb22d5e4b5c12ae2aa"
+  resolved "git+https://github.com/agentofuser/neat-frame.git#b244ca11078bd35f63b2d7cb22d5e4b5c12ae2aa"
   dependencies:
     inspect-with-kind "^1.0.5"
     merge-options "^1.0.1"
@@ -11557,10 +11579,10 @@ onetime@^2.0.0:
   dependencies:
     mimic-fn "^1.0.0"
 
-open@^6.1.0:
-  version "6.1.0"
-  resolved "http://localhost:4873/open/-/open-6.1.0.tgz#0e7e671b883976a4e5251b5d1ca905ab6f4be78f"
-  integrity sha512-Vqch7NFb/WsMujhqfq+B3u0xkssRjZlxh+NSsBSphpcgaFD7gfB0SUBfR91E9ygBlyNGNogXR2cUB8rRfoo2kQ==
+open@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.npmjs.org/open/-/open-6.2.0.tgz#7cf92cb961b5d8498b071e64098bf5e27f57230c"
+  integrity sha512-Vxf6HJkwrqmvh9UAID3MnMYXntbTxKLOSfOnO7LJdzPf3NE3KQYFNV0/Lcz2VAndbRFil58XVCyh8tiX11fiYw==
   dependencies:
     is-wsl "^1.1.0"
 
@@ -12749,6 +12771,11 @@ prettier@^1.16.0, prettier@^1.16.4:
   resolved "http://localhost:4873/prettier/-/prettier-1.16.4.tgz#73e37e73e018ad2db9c76742e2647e21790c9717"
   integrity sha512-ZzWuos7TI5CKUeQAtFd6Zhm2s6EpAD/ZLApIhsF9pRvRtM1RFo61dM/4MSRUA0SuLugA/zgrZD8m0BaY46Og7g==
 
+prettier@^1.17.0:
+  version "1.17.0"
+  resolved "http://localhost:4873/prettier/-/prettier-1.17.0.tgz#53b303676eed22cc14a9f0cec09b477b3026c008"
+  integrity sha512-sXe5lSt2WQlCbydGETgfm1YBShgOX4HxQkFPvbxkcwgDvGDeqVau8h+12+lmSVlP3rHPz0oavfddSZg/q+Szjw==
+
 pretty-bytes@^4.0.2:
   version "4.0.2"
   resolved "http://localhost:4873/pretty-bytes/-/pretty-bytes-4.0.2.tgz#b2bf82e7350d65c6c33aa95aaa5a4f6327f61cd9"
@@ -12963,14 +12990,14 @@ public-encrypt@^4.0.0:
     randombytes "^2.0.1"
     safe-buffer "^5.1.2"
 
-public-ip@^3.0.0:
-  version "3.0.0"
-  resolved "http://localhost:4873/public-ip/-/public-ip-3.0.0.tgz#f5bf64f4c859d11ed4c19e465a99bb9c84e2388f"
-  integrity sha512-aRf7UteqGRj23BRHlavRL9hfcCKxOB3bkraRW0Wg8kPvNFsOD3Q/QPLwXLMEuln2WYKXial/XNGTp5utIIY+FA==
+public-ip@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.npmjs.org/public-ip/-/public-ip-3.1.0.tgz#41c7e336b6879d6092696e6c5beb69eb2e96ed0e"
+  integrity sha512-d7JsmLV7nbwUYqdYWD331eMql6R3xuFozJjLDwq6pzpYCdktCbikVqyfDeyOnG5sfVqgJlWUFELf3MwS322mxQ==
   dependencies:
-    dns-socket "^4.1.1"
-    got "^9.4.0"
-    is-ip "^2.0.0"
+    dns-socket "^4.2.0"
+    got "^9.6.0"
+    is-ip "^3.0.0"
 
 pull-abortable@^4.1.1:
   version "4.1.1"

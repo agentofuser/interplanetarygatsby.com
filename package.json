@@ -23,7 +23,7 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
-    "@agentofuser/ipfs-deploy": "^7.0.1",
+    "@agentofuser/ipfs-deploy": "^7.1.1",
     "@commitlint/cli": "^7.5.2",
     "@commitlint/config-conventional": "^7.5.0",
     "@commitlint/prompt": "^7.5.0",

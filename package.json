@@ -75,7 +75,7 @@
   },
   "scripts": {
     "type-check": "tsc --noEmit --project tsconfig.json",
-    "lint": "tslint --project tsconfig.json",
+    "lint": "tslint --fix --project tsconfig.json",
     "build": "rm -rf .cache/ public/ && gatsby build --prefix-paths",
     "develop": "gatsby develop",
     "format": "prettier --write ./**/*.{js,ts,tsx,json,md,mdx,html,css}",
@@ -90,9 +90,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "type-check",
-      "pre-commit": "lint",
-      "pre-commit": "lint-staged",
+      "pre-commit": "yarn run type-check && yarn run lint && yarn run lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },

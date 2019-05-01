@@ -4,7 +4,7 @@ description: Everything is offline when you're computing at the lag of light.
 date: 2019-03-31T14:37:00.000Z
 ---
 
-This is a blog about making **space-grade websites**.
+**Interplanetary Gatsby** is a blog about making **space-grade websites**.
 
 "Static" and "offline-first" don't really do them justice.
 

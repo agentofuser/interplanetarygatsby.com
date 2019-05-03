@@ -104,18 +104,11 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: 'gatsby-plugin-emoji-favicon',
       options: {
-        name: 'Interplanetary Gatsby',
-        short_name: 'InterplanetaryGatsby',
-        start_url: '/',
-        background_color: '#ffffff',
-        theme_color: '#663399',
-        display: 'minimal-ui',
-        icon: 'content/assets/gatsby-icon.png',
+        emoji: '🛰',
       },
     },
-    // 'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-typography',

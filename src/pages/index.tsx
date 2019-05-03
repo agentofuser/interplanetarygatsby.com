@@ -4,6 +4,7 @@ import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { rhythm } from '../utils/typography'
+import pkg from '../../package.json'
 
 const BlogIndex = (props: any) => {
   const { data } = props
@@ -12,10 +13,7 @@ const BlogIndex = (props: any) => {
 
   return (
     <Layout location={props.location} title={siteTitle}>
-      <SEO
-        title="All posts"
-        keywords={['blog', 'gatsby', 'javascript', 'react']}
-      />
+      <SEO keywords={pkg.keywords} />
       <Bio />
       {posts.map(({ node }: any) => {
         const title = node.frontmatter.title || node.fields.slug

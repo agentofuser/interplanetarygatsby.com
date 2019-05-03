@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     title: 'Interplanetary Gatsby',
     author: '@agentofuser',
-    description: 'A blog about deep-space electronic publishing',
+    description: 'Deep-Space Electronic Publishing',
     siteUrl: 'https://interplanetarygatsby.com/',
     social: {
       twitter: 'agentofuser',

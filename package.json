@@ -58,7 +58,19 @@
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
-    "gatsby"
+    "ipfs",
+    "gatsbyjs",
+    "publishing",
+    "blogging",
+    "static-site-generator",
+    "javascript",
+    "typescript",
+    "dweb",
+    "content-addressable",
+    "distributed-storage",
+    "reactjs",
+    "git",
+    "immutability"
   ],
   "license": "MIT",
   "main": "n/a",

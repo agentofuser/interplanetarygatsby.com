@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "interplanetarygatsby.com",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Deep-Space Electronic Publishing",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Agent of User <interplanetarygatsby.com@agentofuser.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/agentofuser/interplanetarygatsby.com/issues"
   },
   "dependencies": {
     "gatsby": "^2.4.0",

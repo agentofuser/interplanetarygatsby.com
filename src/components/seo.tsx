@@ -9,23 +9,51 @@ import { graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
 import Helmet from 'react-helmet'
 
-function SEO({ description, lang, meta, keywords, title }: any) {
+function SEO({
+  coverImage,
+  description,
+  keywords,
+  lang,
+  location,
+  meta,
+  title,
+}: any) {
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
+          pathPrefix
           siteMetadata {
+            siteUrl
             title
             description
             author
+            coverImage {
+              path
+              width
+              height
+            }
           }
         }
       }
     `
   )
 
+  const {
+    pathPrefix,
+    siteMetadata: { siteUrl },
+  } = site
+  let metaUrl = location.href || siteUrl + location.pathname
+
+  // FIXME hack to work with gatsby-plugin-ipfs hack
+  if (metaUrl.includes(pathPrefix)) {
+    metaUrl = metaUrl.replace(pathPrefix, '')
+  }
+
   const metaTitle = title || site.siteMetadata.title
   const metaDescription = description || site.siteMetadata.description
+  const metaImage = coverImage || site.siteMetadata.coverImage
+  const metaImageUrl = `${siteUrl}/${metaImage.path}`
 
   return (
     <Helmet
@@ -41,6 +69,10 @@ function SEO({ description, lang, meta, keywords, title }: any) {
           content: metaDescription,
         },
         {
+          property: 'og:url',
+          content: metaUrl,
+        },
+        {
           property: 'og:title',
           content: metaTitle,
         },
@@ -51,6 +83,18 @@ function SEO({ description, lang, meta, keywords, title }: any) {
         {
           property: 'og:type',
           content: 'website',
+        },
+        {
+          property: 'og:image',
+          content: metaImageUrl,
+        },
+        {
+          property: 'og:image:width',
+          content: metaImage.width,
+        },
+        {
+          property: 'og:image:height',
+          content: metaImage.height,
         },
         {
           name: 'twitter:card',
@@ -67,6 +111,10 @@ function SEO({ description, lang, meta, keywords, title }: any) {
         {
           name: 'twitter:description',
           content: metaDescription,
+        },
+        {
+          name: 'twitter:image',
+          content: metaImageUrl,
         },
       ]
         .concat(

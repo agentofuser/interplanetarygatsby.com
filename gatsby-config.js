@@ -3,8 +3,13 @@ module.exports = {
   siteMetadata: {
     title: 'Interplanetary Gatsby',
     author: '@agentofuser',
-    description: 'Deep-Space Electronic Publishing',
-    siteUrl: 'https://interplanetarygatsby.com/',
+    description: 'Space-Ready Publishing with Gatsby and IPFS',
+    coverImage: {
+      path: 'nasa-gold.jpg',
+      width: 1581,
+      height: 899,
+    },
+    siteUrl: 'https://interplanetarygatsby.com',
     social: {
       twitter: 'agentofuser',
     },

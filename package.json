@@ -1,7 +1,7 @@
 {
   "name": "interplanetarygatsby.com",
   "private": true,
-  "description": "Deep-Space Electronic Publishing",
+  "description": "Space-Ready Publishing with Gatsby and IPFS",
   "version": "0.1.0",
   "author": "Agent of User <interplanetarygatsby.com@agentofuser.com>",
   "bugs": {
@@ -90,6 +90,7 @@
     "deploy": "ipfs-deploy -O -p infura -p pinata -d cloudflare",
     "commit": "git-cz",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "commit": "git-cz",
     "commit:retry": "git-cz --retry",
     "commitmsg": "commitlint -e"
   },

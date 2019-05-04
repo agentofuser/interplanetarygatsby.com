@@ -1,5 +1,15 @@
+const _ = require('lodash')
+const fp = require('lodash/fp')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
+
+// # pure functions
+
+function getCollection(mdEdge) {
+  return mdEdge.node.fields.collection
+}
+
+// # effectful functions
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -16,6 +26,7 @@ exports.createPages = ({ graphql, actions }) => {
             node {
               fields {
                 slug
+                collection
               }
               frontmatter {
                 title
@@ -30,24 +41,49 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors
     }
 
-    // Create blog posts pages.
-    const posts = result.data.allMarkdownRemark.edges
+    const mds = result.data.allMarkdownRemark.edges
 
-    posts.forEach((post, index) => {
-      const previous =
-        index === posts.length - 1 ? null : posts[index + 1].node
-      const next = index === 0 ? null : posts[index - 1].node
+    // create blog pages
+    {
+      const mdEdges = fp.filter(md => getCollection(md) === 'blog')(mds)
+      mdEdges.forEach((mdEdge, index) => {
+        const previous =
+          index === mdEdges.length - 1 ? null : mdEdges[index + 1].node
+        const next = index === 0 ? null : mdEdges[index - 1].node
 
-      createPage({
-        path: post.node.fields.slug,
-        component: blogPost,
-        context: {
-          slug: post.node.fields.slug,
-          previous,
-          next,
-        },
+        createPage({
+          path: mdEdge.node.fields.slug,
+          component: blogPost,
+          context: {
+            slug: mdEdge.node.fields.slug,
+            collection: getCollection(mdEdge),
+            previous,
+            next,
+          },
+        })
       })
-    })
+    }
+
+    // create wiki pages
+    {
+      const mdEdges = fp.filter(md => getCollection(md) === 'wiki')(mds)
+      mdEdges.forEach((mdEdge, index) => {
+        const previous =
+          index === mdEdges.length - 1 ? null : mdEdges[index + 1].node
+        const next = index === 0 ? null : mdEdges[index - 1].node
+
+        createPage({
+          path: mdEdge.node.fields.slug,
+          component: blogPost,
+          context: {
+            slug: mdEdge.node.fields.slug,
+            collection: getCollection(mdEdge),
+            previous,
+            next,
+          },
+        })
+      })
+    }
 
     return null
   })
@@ -62,6 +98,13 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       name: 'slug',
       node,
       value,
+    })
+
+    const parent = getNode(_.get(node, 'parent'))
+    createNodeField({
+      node,
+      name: 'collection',
+      value: _.get(parent, 'sourceInstanceName'),
     })
   }
 }

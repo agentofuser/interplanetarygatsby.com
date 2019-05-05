@@ -63,12 +63,14 @@ const Layout = ({ location, title, children }: any) => {
       <header>{header}</header>
       <main>{children}</main>
       <footer>
-        Agent of User © {new Date().getFullYear()} ·{' '}
-        <a href="https://blueoakcouncil.org/license/1.0.0">BlueOak-1.0.0</a> ·{' '}
-        <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> ·{' '}
-        <a href="https://support.brave.com/hc/en-us/articles/360021123971-How-do-I-tip-websites-and-Content-Creators-in-Brave-Rewards-">
-          Patronage Appreciated
-        </a>
+        <small>
+          Agent of User © {new Date().getFullYear()} ·{' '}
+          <a href="https://blueoakcouncil.org/license/1.0.0">BlueOak-1.0.0</a>{' '}
+          ·{' '}
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>{' '}
+          · <Link to="patrons">Patrons</Link> ·{' '}
+          <Link to="privacy">Privacy</Link>
+        </small>
       </footer>
     </div>
   )

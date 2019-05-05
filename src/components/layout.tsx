@@ -64,12 +64,17 @@ const Layout = ({ location, title, children }: any) => {
       <main>{children}</main>
       <footer>
         <small>
+          {/* FIXME use an unordered list */}
           Agent of User © {new Date().getFullYear()} ·{' '}
           <a href="https://blueoakcouncil.org/license/1.0.0">BlueOak-1.0.0</a>{' '}
           ·{' '}
           <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>{' '}
-          · <Link to="patrons">Patrons</Link> ·{' '}
-          <Link to="privacy">Privacy</Link>
+          ·{' '}
+          <a href="https://github.com/agentofuser/interplanetarygatsby.com">
+            Suggest edit
+          </a>{' '}
+          · <Link to="privacy">Privacy</Link> ·{' '}
+          <Link to="patrons">Patrons</Link>
         </small>
       </footer>
     </div>

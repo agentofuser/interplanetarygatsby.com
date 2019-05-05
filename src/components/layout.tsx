@@ -1,5 +1,5 @@
-import { Link } from 'gatsby'
 import React from 'react'
+import { Link } from 'gatsby'
 import { rhythm, scale } from '../utils/typography'
 
 declare var __PATH_PREFIX__: string

@@ -4,7 +4,8 @@ Ok here's the quick rundown:
 
 - You should see a reassuring number zero on your Brave browser or legacy
   browser-plus-adblocker
-- There's no analytics or funny pixels or javascript or anything like that
+- There's no analytics or funny pixels or javascript trackers or anything like
+  that
 - Or cookies and other such tricks
 
 **However:**

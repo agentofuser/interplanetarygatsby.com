@@ -1,4 +1,7 @@
-# Be a Patron
+---
+title: 'Be a Patron'
+date: 2019-05-06T13:37:00.000Z
+---
 
 Hi, thanks for checking out this page.
 
@@ -22,4 +25,4 @@ regardless), and
 to Interplanetary Gatsby in the Brave Rewards screen. That way you will help me
 help you and the (intergalactic!) internet.
 
-For the user!
+Let's do it. For the user!

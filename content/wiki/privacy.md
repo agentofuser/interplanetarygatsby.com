@@ -1,4 +1,7 @@
-# Privacy
+---
+title: 'Privacy'
+date: 2019-05-05T13:37:00.000Z
+---
 
 Ok here's the quick rundown:
 

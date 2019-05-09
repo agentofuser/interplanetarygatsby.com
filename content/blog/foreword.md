@@ -10,14 +10,14 @@ date: 2019-05-04T13:37:00.000Z
 
 **In space, there is no such thing as "online"**—this naïve illusion of
 near-simultaneity bore by the small window of low-latency communications that
-graced our species in the few decades that followed millenia of foot, horse,
+graced our species in the few decades that followed millennia of foot, horse,
 and sea, and preceded our belated (re)launch into the deeper waters of the
 cosmic ocean.
 
 For light is slow, and so far as our minds have been able to see, there is no
 short-term escape to its grasp on the reach of our interstellar voice.
 
-Asynchronicity is all that is or ever was or ever will be.
+Asynchrony is all that is or ever was or ever will be.
 
 ---
 

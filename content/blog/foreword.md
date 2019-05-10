@@ -2,11 +2,14 @@
 title: 'Foreword: Space-Ready Publishing with Gatsby and IPFS'
 description: Everything is offline when you're computing at the lag of light.
 date: 2019-05-04T13:37:00.000Z
+image: '../assets/nasa-gold.jpg'
 ---
 
 **Interplanetary Gatsby** is a blog about making **space-grade websites**.
 
 "Static" and "offline-first" don't really do them justice.
+
+![asynchrony](../assets/nasa-gold.jpg)
 
 **In space, there is no such thing as "online"**—this naïve illusion of
 near-simultaneity bore by the small window of low-latency communications that

@@ -4,11 +4,7 @@ module.exports = {
     title: 'Interplanetary Gatsby',
     author: '@agentofuser',
     description: 'Space-Ready Publishing with Gatsby and IPFS',
-    coverImage: {
-      path: 'nasa-gold.jpg',
-      width: 1581,
-      height: 899,
-    },
+    coverImageStaticPath: 'nasa-gold.jpg',
     siteUrl: 'https://interplanetarygatsby.com',
     social: {
       twitter: 'agentofuser',
@@ -45,7 +41,9 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 590,
+              showCaptions: true,
+              withWebp: true,
+              tracedSVG: true,
             },
           },
           {

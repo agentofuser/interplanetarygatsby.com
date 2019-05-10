@@ -16,6 +16,7 @@ const BlogPostTemplate = (props: any) => {
         description={post.frontmatter.description || post.excerpt}
         location={props.location}
         title={post.frontmatter.title}
+        image={post.frontmatter.image}
       />
       <h1>{post.frontmatter.title}</h1>
       <p
@@ -82,6 +83,15 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        image {
+          publicURL
+          childImageSharp {
+            original {
+              width
+              height
+            }
+          }
+        }
       }
     }
   }

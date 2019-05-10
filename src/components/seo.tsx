@@ -9,9 +9,14 @@ import { graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
 import Helmet from 'react-helmet'
 
+const deleteSubtrFn = (substr: string) => {
+  // FIXME hack to work with gatsby-plugin-ipfs hack
+  return (str: string) => str.replace(substr, '')
+}
+
 function SEO({
-  coverImage,
   description,
+  image,
   keywords,
   lang,
   location,
@@ -28,10 +33,16 @@ function SEO({
             title
             description
             author
-            coverImage {
-              path
-              width
-              height
+          }
+          fields {
+            image {
+              publicURL
+              childImageSharp {
+                original {
+                  width
+                  height
+                }
+              }
             }
           }
         }
@@ -42,18 +53,25 @@ function SEO({
   const {
     pathPrefix,
     siteMetadata: { siteUrl },
+    fields: { image: siteCoverImage },
   } = site
-  let metaUrl = location.href || siteUrl + location.pathname
 
-  // FIXME hack to work with gatsby-plugin-ipfs hack
-  if (metaUrl.includes(pathPrefix)) {
-    metaUrl = metaUrl.replace(pathPrefix, '')
-  }
+  const fixIpfsHack = deleteSubtrFn(pathPrefix)
+  const metaUrl = fixIpfsHack(location.href || siteUrl + location.pathname)
 
   const metaTitle = title || site.siteMetadata.title
   const metaDescription = description || site.siteMetadata.description
-  const metaImage = coverImage || site.siteMetadata.coverImage
-  const metaImageUrl = `${siteUrl}/${metaImage.path}`
+
+  console.log({ image })
+  const coverImage = image || siteCoverImage
+  const metaImage = coverImage && {
+    url: `${siteUrl}${coverImage.publicURL}`,
+    width: coverImage.childImageSharp.original.width,
+    height: coverImage.childImageSharp.original.height,
+  }
+  console.log({ metaImage })
+  metaImage.url = fixIpfsHack(metaImage.url)
+  console.log({ metaImage })
 
   return (
     <Helmet
@@ -86,7 +104,7 @@ function SEO({
         },
         {
           property: 'og:image',
-          content: metaImageUrl,
+          content: metaImage.url,
         },
         {
           property: 'og:image:width',
@@ -114,7 +132,7 @@ function SEO({
         },
         {
           name: 'twitter:image',
-          content: metaImageUrl,
+          content: metaImage.url,
         },
       ]
         .concat(

@@ -23,23 +23,23 @@ const BlogIndex = (props: any) => {
             },
           }: any) => collection === 'blog'
         )
-        .map(({ node }: any) => {
-          const title = node.frontmatter.title || node.fields.slug
+        .map(({ node: mdNode }: any) => {
+          const title = mdNode.frontmatter.title || mdNode.fields.slug
           return (
-            <div key={node.fields.slug}>
+            <div key={mdNode.fields.slug}>
               <h3
                 style={{
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                <Link style={{ boxShadow: 'none' }} to={mdNode.fields.slug}>
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <small>{mdNode.frontmatter.date}</small>
               <p
                 dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
+                  __html: mdNode.frontmatter.description || mdNode.excerpt,
                 }}
               />
             </div>

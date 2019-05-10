@@ -2,6 +2,7 @@ const _ = require('lodash')
 const fp = require('lodash/fp')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
+const sizeOf = require('image-size')
 
 // # pure functions
 
@@ -30,6 +31,15 @@ exports.createPages = ({ graphql, actions }) => {
               }
               frontmatter {
                 title
+                image {
+                  publicURL
+                  childImageSharp {
+                    original {
+                      width
+                      height
+                    }
+                  }
+                }
               }
             }
           }
@@ -91,12 +101,38 @@ exports.createPages = ({ graphql, actions }) => {
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
+  const nodeInternalType = node.internal.type
 
-  if (node.internal.type === 'MarkdownRemark') {
+  if (nodeInternalType === 'Site') {
+    // HACK: mimic gatsby-remark-image schema
+    // image {
+    //   publicURL
+    //   childImageSharp {
+    //     original {
+    //       width
+    //       height
+    //     }
+    //   }
+    // }
+    const {coverImageStaticPath} = node.siteMetadata
+    const siteCoverImage = coverImageStaticPath && {
+      publicURL: `/${coverImageStaticPath}`,
+      childImageSharp: {
+        original: sizeOf(path.resolve('static', coverImageStaticPath)),
+      },
+    }
+    createNodeField({
+      node,
+      name: 'image',
+      value: siteCoverImage,
+    })
+  }
+
+  if (nodeInternalType === 'MarkdownRemark') {
     const value = createFilePath({ node, getNode }).slice(0, -1)
     createNodeField({
-      name: 'slug',
       node,
+      name: 'slug',
       value,
     })
 

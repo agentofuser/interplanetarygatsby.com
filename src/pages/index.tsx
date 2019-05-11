@@ -13,7 +13,7 @@ const BlogIndex = (props: any) => {
 
   return (
     <Layout location={props.location} title={siteTitle}>
-      <SEO keywords={pkg.keywords} location={props.location} />
+      <SEO keywords={pkg.keywords} pathname={props.uri} />
       <Bio />
       {posts
         .filter(

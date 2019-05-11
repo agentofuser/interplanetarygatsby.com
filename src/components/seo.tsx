@@ -19,8 +19,8 @@ function SEO({
   image,
   keywords,
   lang,
-  location,
   meta,
+  pathname,
   title,
 }: any) {
   const { site } = useStaticQuery(
@@ -62,21 +62,18 @@ function SEO({
     gatsbyPluginIpfsPrefix,
     relativeUpdirsPrefix
   )
-  const metaUrl = fixIpfsHack(location.href || siteUrl + location.pathname)
+  const canonicalUrl = fixIpfsHack(siteUrl + pathname)
 
   const metaTitle = title || site.siteMetadata.title
   const metaDescription = description || site.siteMetadata.description
 
-  console.log({ image })
   const coverImage = image || siteCoverImage
   const metaImage = coverImage && {
     url: `${siteUrl}${coverImage.publicURL}`,
     width: coverImage.childImageSharp.original.width,
     height: coverImage.childImageSharp.original.height,
   }
-  console.log({ metaImage })
   metaImage.url = fixIpfsHack(metaImage.url)
-  console.log({ metaImage })
 
   return (
     <Helmet
@@ -93,7 +90,7 @@ function SEO({
         },
         {
           property: 'og:url',
-          content: metaUrl,
+          content: canonicalUrl,
         },
         {
           property: 'og:title',

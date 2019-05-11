@@ -14,7 +14,7 @@ const BlogPostTemplate = (props: any) => {
     <Layout location={props.location} title={siteTitle}>
       <SEO
         description={post.frontmatter.description || post.excerpt}
-        location={props.location}
+        pathname={post.fields.slug}
         title={post.frontmatter.title}
         image={post.frontmatter.image}
       />
@@ -92,6 +92,9 @@ export const pageQuery = graphql`
             }
           }
         }
+      }
+      fields {
+        slug
       }
     }
   }

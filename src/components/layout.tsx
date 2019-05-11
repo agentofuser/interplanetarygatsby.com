@@ -73,8 +73,8 @@ const Layout = ({ location, title, children }: any) => {
           <a href="https://github.com/agentofuser/interplanetarygatsby.com">
             Suggest edit
           </a>{' '}
-          · <Link to="privacy">Privacy</Link> ·{' '}
-          <Link to="patrons">Patrons</Link>
+          · <Link to="/privacy/">Privacy</Link> ·{' '}
+          <Link to="/patrons/">Patrons</Link>
         </small>
       </footer>
     </div>

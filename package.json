@@ -112,6 +112,30 @@
       "git add"
     ]
   },
+  "nodemonConfig": {
+    "ignore": [
+      ".DS_Store",
+      ".cache",
+      ".git",
+      "node_modules",
+      "public",
+      "yarn-error.log",
+      "yarn.lock",
+      "*flycheck*"
+    ],
+    "watch": [
+      "content",
+      "gatsby-browser.js",
+      "gatsby-config.js",
+      "gatsby-node.js",
+      "package.json",
+      "src",
+      "tsconfig.json"
+    ],
+    "ext": "js,ts,tsx,md",
+    "verbose": true,
+    "exec": "yarn build && yarn serve"
+  },
   "config": {
     "commitizen": {
       "path": "node_modules/@commitlint/prompt"

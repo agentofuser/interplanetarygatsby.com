@@ -114,7 +114,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     //     }
     //   }
     // }
-    const {coverImageStaticPath} = node.siteMetadata
+    const { coverImageStaticPath } = node.siteMetadata
     const siteCoverImage = coverImageStaticPath && {
       publicURL: `/${coverImageStaticPath}`,
       childImageSharp: {
@@ -129,7 +129,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 
   if (nodeInternalType === 'MarkdownRemark') {
-    const value = createFilePath({ node, getNode }).slice(0, -1)
+    const value = createFilePath({ node, getNode })
     createNodeField({
       node,
       name: 'slug',

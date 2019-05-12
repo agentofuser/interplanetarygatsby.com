@@ -15,36 +15,28 @@ const BlogIndex = (props: any) => {
     <Layout location={props.location} title={siteTitle}>
       <SEO keywords={pkg.keywords} pathname={props.uri} />
       <Bio />
-      {posts
-        .filter(
-          ({
-            node: {
-              fields: { collection },
-            },
-          }: any) => collection === 'blog'
+      {posts.map(({ node: mdNode }: any) => {
+        const title = mdNode.frontmatter.title || mdNode.fields.slug
+        return (
+          <div key={mdNode.fields.slug}>
+            <h3
+              style={{
+                marginBottom: rhythm(1 / 4),
+              }}
+            >
+              <Link style={{ boxShadow: 'none' }} to={mdNode.fields.slug}>
+                {title}
+              </Link>
+            </h3>
+            <small>{mdNode.frontmatter.date}</small>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: mdNode.frontmatter.description || mdNode.excerpt,
+              }}
+            />
+          </div>
         )
-        .map(({ node: mdNode }: any) => {
-          const title = mdNode.frontmatter.title || mdNode.fields.slug
-          return (
-            <div key={mdNode.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: 'none' }} to={mdNode.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{mdNode.frontmatter.date}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: mdNode.frontmatter.description || mdNode.excerpt,
-                }}
-              />
-            </div>
-          )
-        })}
+      })}
     </Layout>
   )
 }
@@ -58,7 +50,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      filter: { fields: { collection: { eq: "blog" } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       edges {
         node {
           excerpt

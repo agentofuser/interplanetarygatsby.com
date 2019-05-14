@@ -87,7 +87,7 @@ const guesses = [
   'dist',          // nuxt
   'output',        // pelican
   'out',           // hexo
-  'build',         // metalsmith, middleman
+  'build',         // create-react-app, metalsmith, middleman
   'website/build', // docusaurus
   'docs',          // many others
 ]

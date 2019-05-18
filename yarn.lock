@@ -6224,10 +6224,9 @@ gatsby-plugin-feed@^2.2.0:
     lodash.merge "^4.6.0"
     rss "^1.2.2"
 
-gatsby-plugin-ipfs@^2.0.2:
+"gatsby-plugin-ipfs@https://github.com/agentofuser/gatsby-plugin-ipfs#rss-absolute-url":
   version "2.0.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-ipfs/-/gatsby-plugin-ipfs-2.0.2.tgz#973c53008328c77760d0c062dcb8804be2792bb8"
-  integrity sha512-Igh4K0axPzfvmP8T0w5Vvo789HTaaC0XHTkHG18jTkwW04J5TV+YPULCxVqRRCGL4cEJgpLuX9TR9iCgEu5igA==
+  resolved "https://github.com/agentofuser/gatsby-plugin-ipfs#23ab8f1871972aacbbff812fbd1f07fd06c3c45b"
   dependencies:
     globby "^8.0.1"
     is-text-path "^1.0.1"

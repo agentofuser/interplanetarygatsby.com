@@ -39,7 +39,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
     "gatsby-plugin-feed": "^2.2.0",
-    "gatsby-plugin-ipfs": "^2.0.2",
+    "gatsby-plugin-ipfs": "https://github.com/agentofuser/gatsby-plugin-ipfs#rss-absolute-url",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sharp": "^2.0.37",
     "gatsby-plugin-typescript": "^2.0.14",
@@ -95,7 +95,8 @@
     "serve": "gatsby serve",
     "start": "rm -rf ./.cache && yarn develop",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "type-check": "tsc --noEmit --project tsconfig.json"
+    "type-check": "tsc --noEmit --project tsconfig.json",
+    "watch": "nodemon"
   },
   "husky": {
     "hooks": {

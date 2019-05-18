@@ -9,7 +9,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
 import Helmet from 'react-helmet'
 
-const deleteSubstrsFn = (...substrs) => {
+const deleteSubstrsFn = (...substrs: string[]) => {
   // FIXME hack to work with gatsby-plugin-ipfs hack
   return (str: string) => str.replace(substrs[0], '').replace(substrs[1], '')
 }

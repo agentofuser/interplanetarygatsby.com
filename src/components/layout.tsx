@@ -74,6 +74,7 @@ const Layout = ({ location, title, children }: any) => {
             Suggest edit
           </a>{' '}
           · <Link to="/privacy/">Privacy</Link> ·{' '}
+          <a href={`${rootPath}rss.xml`}>RSS</a> ·{' '}
           <Link to="/patrons/">Patrons</Link>
         </small>
       </footer>

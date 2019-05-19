@@ -8,11 +8,7 @@
 import { graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
 import Helmet from 'react-helmet'
-
-const deleteSubstrsFn = (...substrs: string[]) => {
-  // FIXME hack to work with gatsby-plugin-ipfs hack
-  return (str: string) => str.replace(substrs[0], '').replace(substrs[1], '')
-}
+import { fixIpfsHackRootRelative } from '../utils/pure-fns'
 
 function SEO({
   description,
@@ -27,7 +23,6 @@ function SEO({
     graphql`
       query {
         site {
-          pathPrefix
           siteMetadata {
             siteUrl
             title
@@ -51,18 +46,11 @@ function SEO({
   )
 
   const {
-    pathPrefix,
     siteMetadata: { siteUrl },
     fields: { image: siteCoverImage },
   } = site
 
-  const gatsbyPluginIpfsPrefix = pathPrefix
-  const relativeUpdirsPrefix = '../../..'
-  const fixIpfsHack = deleteSubstrsFn(
-    gatsbyPluginIpfsPrefix,
-    relativeUpdirsPrefix
-  )
-  const canonicalUrl = fixIpfsHack(siteUrl + pathname)
+  const canonicalUrl = siteUrl + pathname
 
   const metaTitle = title || site.siteMetadata.title
   const metaDescription = description || site.siteMetadata.description
@@ -73,7 +61,7 @@ function SEO({
     width: coverImage.childImageSharp.original.width,
     height: coverImage.childImageSharp.original.height,
   }
-  metaImage.url = fixIpfsHack(metaImage.url)
+  metaImage.url = fixIpfsHackRootRelative(metaImage.url)
 
   return (
     <Helmet

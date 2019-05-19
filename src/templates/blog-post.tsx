@@ -3,18 +3,21 @@ import React from 'react'
 import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import { isBrowser } from '../utils/effectful-fns'
 import { rhythm, scale } from '../utils/typography'
+import { fixIpfsHackRelative } from '../utils/pure-fns'
 
 const BlogPostTemplate = (props: any) => {
   const post = props.data.markdownRemark
   const siteTitle = props.data.site.siteMetadata.title
   const { previous, next } = props.pageContext
 
+  const pathname = post.fields.slug
   return (
     <Layout location={props.location} title={siteTitle}>
       <SEO
         description={post.frontmatter.description || post.excerpt}
-        pathname={post.fields.slug}
+        pathname={pathname}
         title={post.frontmatter.title}
         image={post.frontmatter.image}
       />
@@ -29,7 +32,13 @@ const BlogPostTemplate = (props: any) => {
       >
         {post.frontmatter.date}
       </p>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <div
+        dangerouslySetInnerHTML={{
+          __html: isBrowser
+            ? fixIpfsHackRelative(pathname, post.html)
+            : post.html,
+        }}
+      />
       <hr
         style={{
           marginBottom: rhythm(1),

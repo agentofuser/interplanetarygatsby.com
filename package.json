@@ -38,7 +38,7 @@
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
-    "gatsby-plugin-feed": "^2.2.0",
+    "gatsby-plugin-feed": "^2.2.2",
     "gatsby-plugin-ipfs": "https://github.com/agentofuser/gatsby-plugin-ipfs#interplanetarygatsby.com",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sharp": "^2.0.37",

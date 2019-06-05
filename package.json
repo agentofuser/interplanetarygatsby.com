@@ -8,11 +8,11 @@
     "url": "https://github.com/agentofuser/interplanetarygatsby.com/issues"
   },
   "dependencies": {
-    "gatsby": "^2.5.2",
-    "gatsby-image": "^2.1.0",
+    "gatsby": "^2.8.4",
+    "gatsby-image": "^2.1.2",
     "gatsby-plugin-emoji-favicon": "^1.2.0",
     "gatsby-transformer-remark": "^2.3.12",
-    "gatsby-transformer-sharp": "^2.1.19",
+    "gatsby-transformer-sharp": "^2.1.21",
     "prismjs": "^1.16.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -25,47 +25,47 @@
   },
   "devDependencies": {
     "@agentofuser/ipfs-deploy": "^7.6.0",
-    "@commitlint/cli": "^7.6.1",
-    "@commitlint/config-conventional": "^7.6.0",
-    "@commitlint/prompt": "^7.6.1",
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
     "@types/image-size": "^0.7.0",
-    "@types/node": "^12.0.2",
+    "@types/node": "^12.0.4",
     "@types/react-helmet": "^5.0.8",
     "@types/typography": "^0.16.2",
+    "commitizen": "^3.1.1",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.3.0",
-    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-import": "^2.17.3",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
-    "gatsby-plugin-feed": "^2.2.0",
-    "gatsby-plugin-ipfs": "https://github.com/agentofuser/gatsby-plugin-ipfs#interplanetarygatsby.com",
+    "gatsby-plugin-feed": "^2.2.2",
     "gatsby-plugin-react-helmet": "^3.0.12",
-    "gatsby-plugin-sharp": "^2.0.37",
-    "gatsby-plugin-typescript": "^2.0.14",
+    "gatsby-plugin-sharp": "^2.1.3",
+    "gatsby-plugin-typescript": "^2.0.15",
     "gatsby-plugin-typography": "^2.2.13",
-    "gatsby-remark-copy-linked-files": "^2.0.12",
-    "gatsby-remark-images": "^3.0.11",
+    "gatsby-remark-copy-linked-files": "^2.0.13",
+    "gatsby-remark-images": "^3.0.14",
     "gatsby-remark-prismjs": "^3.2.9",
     "gatsby-remark-responsive-iframe": "^2.1.1",
     "gatsby-remark-smartypants": "^2.0.9",
-    "gatsby-source-filesystem": "^2.0.36",
-    "git-cz": "^3.0.1",
+    "gatsby-source-filesystem": "^2.0.38",
     "http-server": "^0.11.1",
     "husky": "^2.3.0",
     "image-size": "^0.7.4",
     "lint-staged": "^8.1.7",
     "lodash": "^4.17.11",
-    "ndb": "^1.0.44",
-    "nodemon": "^1.19.0",
+    "ndb": "^1.0.45",
+    "nodemon": "^1.19.1",
     "prettier": "^1.17.1",
-    "typescript": "^3.4.5"
+    "typescript": "^3.5.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://interplanetarygatsby.com/",
   "keywords": [
     "blogging",
     "content-addressable",
     "distributed-storage",
+    "decentralization",
     "dweb",
     "gatsbyjs",
     "git",
@@ -81,7 +81,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/agentofuser/interplanetarygatsby.com.git"
   },
   "scripts": {
     "build": "rm -rf .cache/ public/ && gatsby build --prefix-paths",
@@ -139,9 +139,44 @@
     "verbose": true,
     "exec": "yarn build && yarn serve"
   },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "header-max-length": [
+        2,
+        "always",
+        50
+      ],
+      "body-max-line-length": [
+        2,
+        "always",
+        72
+      ],
+      "footer-max-line-length": [
+        2,
+        "always",
+        72
+      ],
+      "scope-empty": [
+        2,
+        "never"
+      ]
+    }
+  },
+  "prettier": {
+    "printWidth": 79,
+    "proseWrap": "always",
+    "endOfLine": "lf",
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5"
+  },
   "config": {
     "commitizen": {
-      "path": "node_modules/@commitlint/prompt"
+      "path": "cz-conventional-changelog"
     }
   }
 }

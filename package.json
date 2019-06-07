@@ -57,7 +57,7 @@
     "lodash": "^4.17.11",
     "ndb": "^1.0.45",
     "nodemon": "^1.19.1",
-    "prettier": "^1.17.1",
+    "prettier": "^1.18.0",
     "typescript": "^3.5.1"
   },
   "homepage": "https://interplanetarygatsby.com/",

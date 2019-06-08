@@ -98,7 +98,7 @@
     "install-local-plugins": "cd plugins/gatsby-plugin-ipfs && yarn install",
     "lint": "echo 'Set up eslint for typescript'",
     "serve": "http-server",
-    "stage": "ipfs-deploy --no-open --no-clipboard --pinner infura --pinner pinata",
+    "stage": "yarn build && ipfs-deploy --no-open --no-clipboard --pinner infura --pinner pinata",
     "start": "rm -rf ./.cache && yarn develop",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "type-check": "tsc --noEmit --project tsconfig.json",

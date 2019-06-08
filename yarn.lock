@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@agentofuser/ipfs-deploy@^7.7.0":
-  version "7.7.0"
-  resolved "https://registry.npmjs.org/@agentofuser/ipfs-deploy/-/ipfs-deploy-7.7.0.tgz#e6d19ad8b03c9d4c8709278fc0d72cfad31de6e3"
-  integrity sha512-tBiDart9EZmpWVuwsGF0o1ld2b7xI5IkRe3heNVJdLgtiKibw7E8gwKbBnAsg6xmUZVQQAtpmsiWWKN7idJvjQ==
+"@agentofuser/ipfs-deploy@^7.7.2":
+  version "7.7.2"
+  resolved "https://registry.npmjs.org/@agentofuser/ipfs-deploy/-/ipfs-deploy-7.7.2.tgz#254b808f81cf49be35f9df09ff928b6a45657b55"
+  integrity sha512-/BdgqUS/y+AX3RlS+Tp4th/3SGSWQyruUpnB6P8CYEDiQ15TagLAQU4uMtKA7OeUmcHxrOCbF0MEVuX1ench2g==
   dependencies:
     axios "^0.19.0"
     byte-size "^5.0.1"

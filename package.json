@@ -24,7 +24,7 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
-    "@agentofuser/ipfs-deploy": "^7.7.0",
+    "@agentofuser/ipfs-deploy": "^7.7.1",
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
     "@types/image-size": "^0.7.0",
@@ -90,8 +90,8 @@
     "commitmsg": "commitlint -e",
     "debug-start": "ndb npm run start",
     "deploy": "ipfs-deploy -O -p infura -p pinata -d cloudflare",
-    "deploy-pinata": "ipfs-deploy -O --no-clipboard -p pinata -d cloudflare",
-    "deploy-infura": "ipfs-deploy -O --no-clipboard -p infura -d cloudflare",
+    "deploy-pinata": "ipfs-deploy --no-open --no-clipboard --pinner pinata --dns cloudflare",
+    "deploy-infura": "ipfs-deploy --no-open --no-clipboard --pinner infura --dns cloudflare",
     "develop": "gatsby develop",
     "format": "prettier --write ./**/*.{js,ts,tsx,json,md,mdx,html,css}",
     "lint": "echo 'Set up eslint for typescript'",

@@ -5,6 +5,6 @@ script: yarn build
 deploy:
   skip_cleanup: true
   provider: script
-  script: yarn deploy-infura
+  script: yarn deploy-pinata
   on:
     branch: master

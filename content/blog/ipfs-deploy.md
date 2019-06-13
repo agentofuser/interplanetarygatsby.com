@@ -3,6 +3,7 @@ title:
   "The Complete Beginner's Guide to Deploying Your First Static Website to IPFS"
 description: 'tldr: cd your-website && npx @agentofuser/ipfs-deploy'
 date: 2019-05-11T13:37:00.000Z
+lastUpdated: 2019-06-13T13:37:00.000Z
 image: '../assets/spacex-merlin-rocket-engine-test-stand-bay-mcgregor-texas-cropped.jpg'
 ---
 
@@ -262,32 +263,13 @@ this in a repository that you're going to host publicly, make sure to add the
 echo .env >> .gitignore
 ```
 
-One last config: to deploy to Pinata, you'll need to forward **port 4002** on
-your router to your machine.
-
-Why? Because deploying to Pinata works like this:
-
-1. We first start a temporary local IPFS node,
-1. Pin the website locally,
-1. And send the hash to Pinata.
-1. Pinata then **connects to our local node as a peer**,
-1. Requests the hash we sent it,
-1. Then downloads and hosts it itself.
-
-Because of step 4, we need to be able to listen to external connections.
-
-Manually forwarding ports is a pain, I know, but support for
-[NAT traversal is coming this quarter to js-ipfs](https://github.com/libp2p/js-libp2p/issues/104#issuecomment-488720839),
-so that is one less hoop we'll need to jump soon 🤞
-
-By contrast, Infura exposes their IPFS node's HTTP API, so we can upload to it
-directly as an HTTP client without running a local node or listening for
-connections.
-
-Pinata's custom API strikes a different point in the
-flexibility-zeroconfigurability spectrum.
-
-Thankfully, with **ipfs-deploy** we can have both ✌️
+_\[Update 2019-06-13: there was a section here about how you needed to do
+manual port forwarding and whatnot to get pinata to deploy, but thankfully,
+that's no longer necessary. they have enabled HTTPS uploading too so now
+there's no need to run a node, open a port, and tell them to connect to it.
+Which is great news, because now this blog has
+[Continuous Deployment](https://twitter.com/agentofuser/status/1137364393308692480)
+with Travis CI 🙌\]_
 
 Now that Pinata is set up, let's get back to the show. Here's what you run to
 deploy to both pinning services:
@@ -298,29 +280,19 @@ ipd -p infura -p pinata
 
 And this is what you get:
 
-```
+```text
 ℹ 🤔 No path argument specified. Looking for common ones…
 ✔ 📂 Found local public directory. Deploying that.
 ✔ 🚚 public weighs 24 B.
 ✔ 📌 It's pinned to Infura now with hash:
 ℹ 🔗 QmQzKWGdjjQeTXrruYL2vLkCqRP8TyXnG1a9QEJjDM8WTY
-```
-
-Nothing new so far. Now to Pinata (featuring new emojis!):
-
-```
-✔ ☎️ Connected to temporary local IPFS node.
-✔ 📶 Port 4002 is externally reachable.
-✔ 📌 Pinned to temporary local IPFS node with hash:
-ℹ 🔗 QmQzKWGdjjQeTXrruYL2vLkCqRP8TyXnG1a9QEJjDM8WTY
 ✔ 📌 It's pinned to Pinata now with hash:
 ℹ 🔗 QmQzKWGdjjQeTXrruYL2vLkCqRP8TyXnG1a9QEJjDM8WTY
-✔ ✋️ Stopped temporary local IPFS node.
 ```
 
 And there it is: same hash, different locations.
 
-```
+```text
 ✔ 📋 Copied HTTP gateway URL to clipboard:
 ℹ 🔗 https://ipfs.infura.io/ipfs/QmQzKWGdjjQeTXrruYL2vLkCqRP8TyXnG1a9QEJjDM8WTY
 ✔ 🏄 Opened web browser (call with -O to disable.)

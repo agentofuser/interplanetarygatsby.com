@@ -31,6 +31,9 @@ const BlogPostTemplate = (props: any) => {
         }}
       >
         {post.frontmatter.date}
+        {post.frontmatter.lastUpdated ? (
+          <em>{` · Last updated: ${post.frontmatter.lastUpdated}`}</em>
+        ) : null}
       </p>
       <div
         dangerouslySetInnerHTML={{
@@ -91,6 +94,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        lastUpdated(formatString: "MMMM DD, YYYY")
         description
         image {
           publicURL

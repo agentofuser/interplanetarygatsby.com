@@ -3,6 +3,7 @@ import React from 'react'
 import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import DateText from '../components/date-text'
 import { rhythm } from '../utils/typography'
 import pkg from '../../package.json'
 
@@ -28,7 +29,9 @@ const BlogIndex = (props: any) => {
                 {title}
               </Link>
             </h3>
-            <small>{mdNode.frontmatter.date}</small>
+            <small>
+              <DateText {...mdNode.frontmatter} />
+            </small>
             <p
               dangerouslySetInnerHTML={{
                 __html: mdNode.frontmatter.description || mdNode.excerpt,
@@ -63,6 +66,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
+            lastUpdated(formatString: "MMMM DD, YYYY")
             title
             description
           }

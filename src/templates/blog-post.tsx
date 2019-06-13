@@ -3,6 +3,7 @@ import React from 'react'
 import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import DateText from '../components/date-text'
 import { isBrowser } from '../utils/effectful-fns'
 import { rhythm, scale } from '../utils/typography'
 import { fixIpfsHackRelative } from '../utils/pure-fns'
@@ -30,10 +31,7 @@ const BlogPostTemplate = (props: any) => {
           marginTop: rhythm(-1),
         }}
       >
-        {post.frontmatter.date}
-        {post.frontmatter.lastUpdated ? (
-          <em>{` · Last updated: ${post.frontmatter.lastUpdated}`}</em>
-        ) : null}
+        <DateText {...post.frontmatter} />
       </p>
       <div
         dangerouslySetInnerHTML={{

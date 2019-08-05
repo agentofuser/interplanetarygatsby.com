@@ -1,7 +1,7 @@
 ---
 title:
   "The Complete Beginner's Guide to Deploying Your First Static Website to IPFS"
-description: 'tldr: cd your-website && npx @agentofuser/ipfs-deploy'
+description: 'tldr: cd your-website && npx ipfs-deploy'
 date: 2019-05-11T13:37:00.000Z
 lastUpdated: 2019-06-13T13:37:00.000Z
 image: '../assets/spacex-merlin-rocket-engine-test-stand-bay-mcgregor-texas-cropped.jpg'
@@ -22,8 +22,8 @@ mkdir -p dwebsite/public
 cd dwebsite
 echo '<h1>Hello, worlds!</h1>' >> public/index.html
 
-yarn global add @agentofuser/ipfs-deploy
-# or: npm install -g @agentofuser/ipfs-deploy
+yarn global add ipfs-deploy
+# or: npm install -g ipfs-deploy
 ipd
 ```
 

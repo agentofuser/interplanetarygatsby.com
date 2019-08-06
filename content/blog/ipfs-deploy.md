@@ -3,7 +3,7 @@ title:
   "The Complete Beginner's Guide to Deploying Your First Static Website to IPFS"
 description: 'tldr: cd your-website && npx ipfs-deploy'
 date: 2019-05-11T13:37:00.000Z
-lastUpdated: 2019-06-13T13:37:00.000Z
+lastUpdated: 2019-08-06T13:37:00.000Z
 image: '../assets/spacex-merlin-rocket-engine-test-stand-bay-mcgregor-texas-cropped.jpg'
 ---
 

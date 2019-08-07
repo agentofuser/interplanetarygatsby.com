@@ -3,7 +3,7 @@ title:
   "The Complete Beginner's Guide to Deploying Your First Static Website to IPFS"
 description: 'tldr: cd your-website && npx ipfs-deploy'
 date: 2019-05-11T13:37:00.000Z
-lastUpdated: 2019-08-06T13:37:00.000Z
+lastUpdated: 2019-08-07T13:37:00.000Z
 image: '../assets/spacex-merlin-rocket-engine-test-stand-bay-mcgregor-texas-cropped.jpg'
 ---
 
@@ -394,7 +394,8 @@ and Cloudflare API credentials to your website's `.env` file:
 
 ```bash
 # dwebsite/.env
-IPFS_DEPLOY_SITE_DOMAIN=example.com
+IPFS_DEPLOY_SITE_ZONE=example.com
+IPFS_DEPLOY_SITE_RECORD=_dnslink.example.com
 IPFS_DEPLOY_CLOUDFLARE__API_KEY=paste-your-cloudflare-api-key-here
 IPFS_DEPLOY_CLOUDFLARE__API_EMAIL=the-email-you-used-to-sign-up
 ```

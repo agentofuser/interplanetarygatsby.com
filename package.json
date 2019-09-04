@@ -28,7 +28,7 @@
     "@commitlint/cli": "^8.1.0",
     "@commitlint/config-conventional": "^8.1.0",
     "@types/image-size": "^0.7.0",
-    "@types/node": "^12.6.9",
+    "@types/node": "^12.7.4",
     "@types/react-helmet": "^5.0.9",
     "@types/typography": "^0.16.2",
     "babel-cli": "^6.26.0",

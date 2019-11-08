@@ -44,6 +44,7 @@ function Bio() {
                 borderRadius: '50%',
                 width: '50px',
                 height: '50px',
+                flexShrink: 0,
               }}
             />
             <p>

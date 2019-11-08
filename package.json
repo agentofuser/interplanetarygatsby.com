@@ -85,6 +85,7 @@
     "url": "git+https://github.com/agentofuser/interplanetarygatsby.com.git"
   },
   "scripts": {
+    "bootstrap": "yarn install && yarn install-local-plugins && yarn build-local-plugins",
     "build": "rm -rf .cache/ public/ && yarn build-local-plugins && gatsby build --prefix-paths",
     "build-local-plugins": "cd plugins/gatsby-plugin-ipfs && yarn build",
     "commit:retry": "git-cz --retry",

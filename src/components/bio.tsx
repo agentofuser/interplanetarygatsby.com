@@ -8,6 +8,7 @@
 import { graphql, StaticQuery } from 'gatsby'
 import React from 'react'
 import { rhythm } from '../utils/typography'
+import profilePic from '../../content/assets/profile-pic.jpg'
 
 const bioQuery = graphql`
   query BioQuery {
@@ -36,7 +37,7 @@ function Bio() {
             }}
           >
             <img
-              src="https://ipfs.io/ipfs/QmThuKNy7wU79vR7HCF3okQG491KAqJ1VeV7ErXGqGw8bz/static/84b40c3e3d12d1c851648bf738e1f420/c15d6/profile-pic.jpg"
+              src={profilePic}
               alt={author}
               style={{
                 marginRight: rhythm(1 / 2),

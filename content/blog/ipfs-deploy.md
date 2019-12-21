@@ -64,7 +64,7 @@ deployed (`public`) explicitly.
 
 But then you wouldn't see the "hard thinking" emoji as **ipfs-deploy** probes
 smartly about for one of the many, often undocumented,
-[build destinations commonly used by static site generators](https://github.com/agentofuser/ipfs-deploy/blob/8023d82b5df68076ca79bc684f45ea64e5e67c06/index.js#L75 'yeah, I dug through staticgen.com for you').
+[build destinations commonly used by static site generators](https://github.com/ipfs-shipyard/ipfs-deploy#usage) 'yeah, I dug through staticgen.com for you').
 
 ```
 ℹ 🤔 No path argument specified. Looking for common ones…
@@ -422,7 +422,7 @@ just so that this peculiar artifact can gracefully and **effortlessly** glide
 its way onto a goal is so... moving.
 
 That's how I want
-[ipfs-deploy](https://github.com/agentofuser/ipfs-deploy '@agentofuser/ipfs-deploy')
+[ipfs-deploy](https://github.com/ipfs-shipyard/ipfs-deploy 'ipfs-deploy')
 to feel to the user. A silk-smooth experience landing them right on the
 distributed web without breaking a sweat, and a wild sweeping crowd cheering
 them on.

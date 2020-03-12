@@ -50,7 +50,7 @@
     "gatsby-remark-prismjs": "^3.3.21",
     "gatsby-remark-responsive-iframe": "^2.2.25",
     "gatsby-remark-smartypants": "^2.1.14",
-    "gatsby-source-filesystem": "^2.1.35",
+    "gatsby-source-filesystem": "^2.1.53",
     "http-server": "^0.11.1",
     "husky": "^3.0.9",
     "image-size": "^0.8.3",

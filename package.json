@@ -55,7 +55,7 @@
     "husky": "^3.0.9",
     "image-size": "^0.8.3",
     "lint-staged": "^9.4.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "ndb": "^1.1.5",
     "nodemon": "^1.19.4",
     "prettier": "^1.18.2",
